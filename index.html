@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giulia D’Alessandro — Portfolio</title>
+  <meta name="description" content="Portfolio di Giulia D’Alessandro, Technical Designer. Milano, 2026.">
+
+  <!-- Font: blackletter per il nome, serif per il testo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER (fisso) ============ -->
+  <header class="site-header">
+    <nav aria-label="Navigazione principale">
+      <a href="index.html">/about.</a>
+      <a href="projects.html">/projects.</a>
+      <a href="weightlifting.html">/weightlifting.</a>
+      <a href="illustration.html">/illustration.</a>
+      <a href="strategy.html">/strategy.</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- ============ 1. LANDING ============ -->
+    <section class="hero" id="home">
+      <span class="hero__line" aria-hidden="true"></span>
+
+      <figure class="hero__cover">
+        <!-- Sostituisci con la tua immagine (meglio PNG/WebP con sfondo trasparente) -->
+        <img src="img/cover.png" alt="Quaderno con nastri neri">
+        <span class="hero__stars" aria-hidden="true">✴<br>&nbsp;✴<br>✴</span>
+      </figure>
+	
+      <h1 class="hero__name">
+        Giulia <br>D’A-<br>les-<br>san-<br>dro.
+      </h1>
+
+      <p class="hero__place">Milan</p>
+      <p class="hero__year">2026</p>
+
+      <a class="hero__scroll" href="#about" aria-label="Scorri verso il basso">↓</a>
+    </section>
+
+    <!-- ============ 2. ABOUT (anteprima) ============ -->
+    <section class="about" id="about">
+      <div class="about__tabs" aria-hidden="true">
+        <!-- 5 linguette = 5 voci dell'header (stesso ordine) -->
+        <span class="tab tab--1"></span>
+        <span class="tab tab--2"></span>
+        <span class="tab tab--3"></span>
+        <span class="tab tab--4"></span>
+        <span class="tab tab--5"></span>
+      </div>
+
+      <div class="about__body">
+        <div class="about__photo-wrap">
+          <img class="about__photo" src="img/giulia.jpg" alt="Ritratto di Giulia D’Alessandro">
+
+          <!-- Graffetta: il tuo file in img/graffetta.png -->
+          <img class="clip" src="img/graffetta.png" alt="" aria-hidden="true">
+        </div>
+
+        <div class="about__text">
+          <h2>Giulia D’Alessandro</h2>
+          <p class="about__marks" aria-hidden="true">.<br>✴<br>.</p>
+          <p class="about__quote">
+            /I have this thing in my mind<br>
+            that makes it<br>
+            impossible<br>
+            for me<br>
+            to accept that<br>
+            some things just don’t exist.
+          </p>
+
+          <!-- ===== Formazione ed esperienza ===== -->
+          <div class="cv">
+            <div class="cv__item">
+              <p class="cv__row">
+                <span class="cv__title">Master’s Degree.</span>
+                <span class="cv__pattern" aria-hidden="true">✴ . ✴ . ✴</span>
+                <span class="cv__where">Politecnico di Milano</span>
+                <span class="cv__pattern" aria-hidden="true">✴ . ✴ . ✴</span>
+                <span class="cv__when">September 2025 - current</span>
+              </p>
+              <p class="about__marks" aria-hidden="true">.<br>✴<br>.</p>
+            </div>
+
+            <div class="cv__item">
+              <p class="cv__row">
+                <span class="cv__title">Advanced Patternmaking Diploma.</span>
+                <span class="cv__pattern" aria-hidden="true">✴ . ✴</span>
+                <span class="cv__where">AFOL Moda</span>
+                <span class="cv__pattern" aria-hidden="true">. ✴ . ✴</span>
+                <span class="cv__when">September 2024 - September 2025</span>
+              </p>
+              <p class="about__marks" aria-hidden="true">.<br>✴<br>.</p>
+            </div>
+
+            <div class="cv__item">
+              <p class="cv__row">
+                <span class="cv__title">Patternmaker Internship.</span>
+                <span class="cv__pattern" aria-hidden="true">✴ . ✴ .</span>
+                <span class="cv__where">+39 Manifatture</span>
+                <span class="cv__pattern" aria-hidden="true">✴ . ✴ . ✴ .</span>
+                <span class="cv__when">March 2024 - June 2025</span>
+              </p>
+              <p class="about__marks" aria-hidden="true">.<br>✴<br>.</p>
+            </div>
+
+            <div class="cv__item">
+              <p class="cv__row">
+                <span class="cv__title">Bachelor Degree.</span>
+                <span class="cv__pattern" aria-hidden="true">✴ . ✴ . ✴</span>
+                <span class="cv__where">Politecnico di Milano</span>
+                <span class="cv__pattern" aria-hidden="true">. ✴ . ✴</span>
+                <span class="cv__when">September 2022 - March 2025</span>
+              </p>
+              <p class="about__marks" aria-hidden="true">.<br>✴<br>.</p>
+            </div>
+          </div>
+
+          <!-- ===== Competenze e lingue ===== -->
+          <div class="skills">
+            <div class="skills__col">
+              <h3 class="skills__title">/HARD skills.</h3>
+              <p class="about__marks" aria-hidden="true">.<br>✴<br>.</p>
+              <ul class="skills__list">
+                <li>Patternmaking</li>
+                <li>Prototyping</li>
+                <li>Tailoring</li>
+                <li>Design</li>
+                <li>Research and Development</li>
+                <li>Creative Direction</li>
+                <li>Suite Adobe</li>
+                <li>Lectra Modaris</li>
+                <li>Clo3D and Marvelous</li>
+              </ul>
+            </div>
+
+            <div class="skills__col">
+              <h3 class="skills__title">/SOFT skills.</h3>
+              <p class="about__marks" aria-hidden="true">.<br>✴<br>.</p>
+              <ul class="skills__list">
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>Motivation</li>
+                <li>Critical Thinking</li>
+                <li>Empathy</li>
+                <li>Curiosity</li>
+              </ul>
+
+              <div class="languages">
+                <h3 class="skills__title">/Languages.</h3>
+                <p class="about__marks" aria-hidden="true">.<br>✴<br>.</p>
+                <ul class="languages__list">
+                  <li><div class="languages__row"><span class="languages__name">English</span><span class="cv__pattern" aria-hidden="true">✴ . ✴ .</span><span class="languages__level">C1</span></div></li>
+                  <li><div class="languages__row"><span class="languages__name">Spanish</span><span class="cv__pattern" aria-hidden="true">. ✴ . .</span><span class="languages__level">B1</span></div></li>
+                  <li><div class="languages__row"><span class="languages__name">Italian</span><span class="cv__pattern" aria-hidden="true">✴ . ✴ .</span><span class="languages__level">Mothertongue</span></div></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <p class="about__more"><a href="about.html">Leggi di più →</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

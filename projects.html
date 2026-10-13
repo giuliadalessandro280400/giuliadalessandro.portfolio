@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Giulia D’Alessandro</title>
+  <meta name="description" content="Progetti di Giulia D’Alessandro: Master’s degree e Bachelor.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400&family=EB+Garamond:wght@400;500&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+  <!-- style.css = header e linguette in comune con la home. projects.css = solo questa pagina. -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body class="page-projects">
+
+  <!--
+  ======================================================================
+   COME MODIFICARE QUESTA PAGINA
+
+   AGGIUNGERE UN PROGETTO
+     1. Copia il blocco "TEMPLATE NUOVO PROGETTO" in fondo al file,
+        togli i commenti e incollalo prima di </main>.
+     2. Cambia l'id (es. id="window") e il titolo.
+     3. Aggiungi una riga nel menu laterale: <li><a href="#window">Window</a></li>
+        (l'id nel link deve essere uguale all'id del progetto).
+     I progetti scorrono nell'ordine in cui li scrivi qui sotto.
+
+   AGGIUNGERE UNA PAGINA A UN CAPITOLO (research, design, development, photoshoot)
+     Copia un intero <div class="page"> … </div> dentro lo stesso <div class="hscroll">.
+
+   AGGIUNGERE UN'IMMAGINE A UNA PAGINA
+     <figure class="item" style="--x:10%; --y:20%; --w:20%; --r:0.75">
+       <img src="img/progetto/nome-file.jpg" alt="descrizione" draggable="false">
+     </figure>
+     --x e --y = posizione dall'angolo in alto a sinistra della pagina (in %)
+     --w       = larghezza (in % della pagina)
+     --r       = larghezza ÷ altezza della foto:
+                 0.75 = verticale 3:4 · 1 = quadrata · 1.5 = orizzontale 3:2
+     Le immagini dopo vengono sovrapposte a quelle prima.
+     Per un riquadro grigio al posto di una foto non ancora pronta, aggiungi
+     la classe  item--empty  (es. class="item item--empty").
+  ======================================================================
+  -->
+
+  <!-- ============ HEADER (stesso della home) ============ -->
+  <header class="site-header">
+    <nav aria-label="Navigazione principale">
+      <a href="index.html">/about.</a>
+      <a href="projects.html" aria-current="page">/projects.</a>
+      <a href="weightlifting.html">/weightlifting.</a>
+      <a href="illustration.html">/illustration.</a>
+      <a href="strategy.html">/strategy.</a>
+    </nav>
+  </header>
+
+  <!-- Linguette: qui /projects (la 2ª) sta davanti a tutte le altre, senza il body nero -->
+  <div class="tabs-bar" aria-hidden="true">
+    <span class="tab tab--1"></span>
+    <span class="tab tab--2"></span>
+    <span class="tab tab--3"></span>
+    <span class="tab tab--4"></span>
+    <span class="tab tab--5"></span>
+  </div>
+
+  <!-- ============ MENU LATERALE (compare col mouse sul bordo sinistro) ============ -->
+  <div class="side-hot" aria-hidden="true"></div>
+  <nav class="side-menu" id="side-menu" aria-label="Elenco progetti">
+    <p class="side-menu__title">/projects.</p>
+    <p class="side-menu__marks" aria-hidden="true">.<br>✴<br>.</p>
+
+    <h2 class="side-menu__group">Master’s degree</h2>
+    <ul>
+      <li><a href="#orchestra">Orchestra</a></li>
+      <li><a href="#window">Window</a></li>
+    </ul>
+
+    <h2 class="side-menu__group"><a href="#bachelor">Bachelor</a></h2>
+    <ul>
+      <li><a href="#usate-dolcezza">Usate dolcezza miei prodi / Exercise gentleness my brave ones</a></li>
+      <li><a href="#carne-di-stella">Carne di stella / Flesh of a star</a></li>
+      <li><a href="#speedway-to-absolution">Speedway to absolution</a></li>
+      <li><a href="#charity">Charity</a></li>
+      <li><a href="#monaco-fast-and-slow">Monacò fast and slow</a></li>
+      <!-- <li><a href="#black-swan">Black Swan</a></li> -->
+    </ul>
+  </nav>
+  <!-- Pulsante per touch (si vede solo su telefoni/tablet, dove non c'è l'hover) -->
+  <button class="side-toggle" type="button" aria-controls="side-menu" aria-expanded="false" aria-label="Apri l’elenco dei progetti">✴</button>
+
+  <main>
+
+    <!-- ==================================================================
+         MASTER’S DEGREE
+         ================================================================== -->
+
+    <!-- ================== ORCHESTRA ================== -->
+    <article class="project" id="orchestra">
+
+      <!-- ---------- Copertina ---------- -->
+      <section class="cover" aria-label="Orchestra — copertina">
+        <div class="sheet">
+          <span class="cover__line" aria-hidden="true"></span>
+
+          <div class="cover__credits">
+            <p class="cover__directed"><b>DIRECTED by</b> Daria&nbsp;CASCIANI, Marina&nbsp;CARULLI, Pietro&nbsp;DE&nbsp;NARDI, Silvia&nbsp;PERSONENI, Kleant&nbsp;STASA</p>
+            <p class="cover__team">Giulia D’Alessandro, Laura Moreno, Ester Simonetti, Ahn Thu Huyunh, Caterina Zannoni</p>
+          </div>
+
+          <img class="cover__thumb" src="img/orchestra/orchestra-cover-violin.jpg" alt="" draggable="false">
+
+          <div class="cover__main">
+            <h1 class="cover__title">Orchestra,</h1>
+            <p class="cover__kind">OPERA</p>
+            <p class="cover__for">for</p>
+            <p class="cover__studio">Fashion Design Studio</p>
+            <p class="cover__project">Project</p>
+            <p class="cover__name"><span class="cover__swash" aria-hidden="true">~</span>MADE FOR TRAVEL.<span class="cover__swash" aria-hidden="true">~</span></p>
+            <p class="cover__tagline">Comfort and functionality for orchestra members</p>
+            <p class="cover__dates">SEPT <b>‘25</b> FEB <b>‘26</b></p>
+          </div>
+
+          <p class="cover__place">created in Milan, from Rome to Prague</p>
+
+          <div class="cover__desc">
+            <p><span class="cover__marks" aria-hidden="true">✴ ♯</span>A fashion collection that reimagines the traditional attire of orchestra musicians through the lens of mobility, performance, and modern comfort.<br>Orchestra players, physical strain in black tie formality.</p>
+            <p><span class="cover__marks" aria-hidden="true">✴ ♯</span>Each piece pays homage to the elegant, tailored codes of formal wear, fusing them with technical fabrics and design solutions engineered for sharpness and sportswear-like ease.</p>
+            <p>Whether on a plane, in a practice room, under stage lights, or seated at a post-concert dinner, the garments are made to move, breathe, and transition fluidly with the musician’s rhythm.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Research ---------- -->
+      <section class="chapter" id="orchestra-research">
+        <header class="chapter__head">
+          <h2 class="chapter__title">/research.</h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+
+        <div class="hscroll" tabindex="0" aria-label="Orchestra — research">
+
+          <!-- Pagina 1 · Rachel -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:48.75%; --y:18.15%; --w:22.42%; --r:1.29"><img src="img/orchestra/research-1-1.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:66.5%; --y:47.82%; --w:10.58%; --r:0.765"><img src="img/orchestra/research-1-2.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:72.5%; --y:28.05%; --w:10.5%; --r:0.939"><img src="img/orchestra/research-1-3.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:78.41%; --y:47.82%; --w:10.5%; --r:0.839"><img src="img/orchestra/research-1-4.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:7.14%; --y:18.15%; --w:10.59%; --r:0.845"><img src="img/orchestra/research-1-5.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:13.59%; --y:35.76%; --w:13.07%; --r:2.246"><img src="img/orchestra/research-1-6.png" alt="" draggable="false"></figure>
+            <dl class="profile" style="--x:72.5%; --y:75.8%; --w:24.7%">
+              <div class="profile__row profile__row--name"><dt>Name</dt><dd>Rachel</dd></div>
+              <div class="profile__row"><dt>Age</dt><dd>40</dd></div>
+              <div class="profile__row"><dt>Status</dt><dd>Orchestra Director</dd></div>
+            </dl>
+          </div></div>
+
+          <!-- Pagina 2 · Marc -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:57.04%; --y:52.24%; --w:11.83%; --r:0.682"><img src="img/orchestra/research-2-1.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:70.11%; --y:22.71%; --w:16.6%; --r:0.965"><img src="img/orchestra/research-2-2.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:70.12%; --y:52.23%; --w:8.53%; --r:0.762"><img src="img/orchestra/research-2-3.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:52.46%; --y:17.49%; --w:16.42%; --r:0.8"><img src="img/orchestra/research-2-4.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:7.14%; --y:20.61%; --w:10.5%; --r:0.844"><img src="img/orchestra/research-2-5.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:11.1%; --y:33.82%; --w:16.04%; --r:1.329"><img src="img/orchestra/research-2-6.png" alt="" draggable="false"></figure>
+            <dl class="profile" style="--x:69.6%; --y:78.1%; --w:28.2%">
+              <div class="profile__row profile__row--name"><dt>Name</dt><dd>Marc</dd></div>
+              <div class="profile__row"><dt>Age</dt><dd>28</dd></div>
+              <div class="profile__row"><dt>Status</dt><dd>String Musician</dd></div>
+            </dl>
+          </div></div>
+
+          <!-- Pagina 3 · Ambienti -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:73.52%; --y:4.35%; --w:23.74%; --r:0.764"><img src="img/orchestra/research-3-1.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:48.44%; --y:45.93%; --w:23.66%; --r:0.762"><img src="img/orchestra/research-3-2.jpg" alt="" draggable="false"></figure>
+          </div></div>
+
+          <!-- Pagina 4 · Moodboard "Swan Lake" -->
+          <div class="page"><div class="sheet">
+            <!-- Spartito grigio di sfondo: nel PDF è un disegno vettoriale e non l'ho potuto estrarre.
+                 Esportalo come PNG, salvalo come img/orchestra/research-4-spartito.png
+                 e poi togli i commenti intorno a questa riga.
+            <figure class="item item--back" style="--x:57.9%; --y:11.2%; --w:38.4%; --r:0.827"><img src="img/orchestra/research-4-spartito.png" alt="" draggable="false"></figure>
+            -->
+            <figure class="item" style="--x:13.59%; --y:26.21%; --w:29.58%; --r:1.256"><img src="img/orchestra/research-4-1.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:32.67%; --y:65.76%; --w:10.58%; --r:0.946"><img src="img/orchestra/research-4-2.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:50.7%; --y:16.34%; --w:16.5%; --r:0.954"><img src="img/orchestra/research-4-3.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:50.61%; --y:46.03%; --w:16.59%; --r:0.705"><img src="img/orchestra/research-4-4.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:68.34%; --y:26.19%; --w:17.12%; --r:0.725"><img src="img/orchestra/research-4-5.jpg" alt="" draggable="false"></figure>
+            <div class="swatches" style="--x:45.7%; --y:34.1%; --w:2.5%">
+              <i style="--c:#050505"></i>
+              <i style="--c:#dcd2c8"></i>
+              <i style="--c:#a09878"></i>
+              <i style="--c:#6e5c3a"></i>
+              <i style="--c:#8c0e0e"></i>
+            </div>
+            <p class="item item--text" style="--x:67.6%; --y:92.4%">Scene from “Swan Lake” - Tchaikovsky - arr. by CM de Guzman</p>
+            <p class="item item--text" style="--x:94.9%; --y:92.4%">2 /2</p>
+          </div></div>
+
+          <!-- Pagina 5 · Riferimenti capi -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:11.99%; --y:21.41%; --w:16.58%; --r:0.464"><img src="img/orchestra/research-5-1.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:29.82%; --y:29.02%; --w:16.42%; --r:0.877"><img src="img/orchestra/research-5-2.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:29.73%; --y:60.78%; --w:12.0%; --r:0.69"><img src="img/orchestra/research-5-3.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:53.68%; --y:41.18%; --w:16.58%; --r:0.671"><img src="img/orchestra/research-5-4.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:71.51%; --y:31.16%; --w:16.89%; --r:0.679"><img src="img/orchestra/research-5-5.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:59.6%; --y:21.28%; --w:10.59%; --r:0.946"><img src="img/orchestra/research-5-6.jpg" alt="" draggable="false"></figure>
+          </div></div>
+
+          <!-- Pagina 6 · Dettagli -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:14.59%; --y:18.93%; --w:16.61%; --r:0.704"><img src="img/orchestra/research-6-1.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:32.35%; --y:26.85%; --w:16.59%; --r:0.67"><img src="img/orchestra/research-6-2.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:20.6%; --y:58.5%; --w:10.5%; --r:0.844"><img src="img/orchestra/research-6-3.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:38.27%; --y:68.39%; --w:10.59%; --r:0.947"><img src="img/orchestra/research-6-4.png" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:56.3%; --y:38.71%; --w:16.59%; --r:1.482"><img src="img/orchestra/research-6-5.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:56.45%; --y:58.5%; --w:11.76%; --r:0.677"><img src="img/orchestra/research-6-6.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:62.3%; --y:18.95%; --w:10.5%; --r:0.937"><img src="img/orchestra/research-6-7.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:74.04%; --y:38.73%; --w:10.46%; --r:0.697"><img src="img/orchestra/research-6-8.jpg" alt="" draggable="false"></figure>
+          </div></div>
+
+        </div>
+      </section>
+
+      <section class="chapter" id="orchestra-design">
+        <header class="chapter__head">
+          <h2 class="chapter__title">/design.</h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Orchestra — design">
+
+          <!-- Pagina 1 · le due linee (Armonica / Concertech) -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:6.91%; --y:83.12%; --w:0.29%; --r:0.067"><img src="img/orchestra/design-1-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:6.91%; --y:59.65%; --w:0.29%; --r:0.067"><img src="img/orchestra/design-1-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <!-- linea orizzontale e filetti: posizioni in % della pagina -->
+            <span class="hrule" style="--y:80.26%" aria-hidden="true"></span>
+            <span class="vbar" style="--x:41.19%; --y:59.2%; --h:6.5%" aria-hidden="true"></span>
+            <span class="vbar vbar--thick" style="--x:41.44%; --y:59.2%; --h:6.5%" aria-hidden="true"></span>
+            <span class="vbar" style="--x:41.29%; --y:82.7%; --h:6.5%" aria-hidden="true"></span>
+            <span class="vbar vbar--thick" style="--x:41.54%; --y:82.7%; --h:6.5%" aria-hidden="true"></span>
+
+            <div class="txt txt--wrap txt--par" style="--x:10.33%; --y:60.5%; --w:29.8%; --fs:.703; --lh:1.333">
+              <p><i>Armonica</i> is defined by a distinctive pleated construction, developed to create volume, flexibility and controlled shape.</p>
+              <p>Each pleat is secured with topstitching on both the outside and inside, allowing the garment to move freely while maintaining structure — preventing the pleats from opening too wide or losing their form. This technique enhances mobility and comfort, while preserving a precise, sartorial finish.</p>
+              <p>The construction is featured in the sleeves of a women’s trench coat and a men’s jacket, where stitching runs through the centre of each fold, and in a men’s shirt and women’s trousers, where stitching follows the pleat edges for a sharper, more graphic definition.</p>
+            </div>
+
+            <div class="txt txt--wrap txt--par" style="--x:10.33%; --y:84.5%; --w:29.8%; --fs:.703; --lh:1.333">
+              <p><i>Concertech</i> is the performance-driven line designed for orchestral musicians on stage.</p>
+              <p>The silhouettes are classic and formal — refined black pieces that read like traditional concertwear from a distance — yet they are engineered with advanced technical fabrics. Stretch, breathability, thermoregulation, odour control and wrinkle resistance are integrated to support long performances, travel, and the physical demands of playing.</p>
+              <p>Each garment combines elegant tailoring with discreet functional details, offering a professional concert look with the comfort and reliability of technical wear.</p>
+            </div>
+          </div></div>
+
+          <!-- Pagina 2 · figurini 1 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:53.12%; --y:27.38%; --w:8.37%; --r:0.322"><img src="img/orchestra/design-2-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:5.51%; --y:27.26%; --w:8.37%; --r:0.321"><img src="img/orchestra/design-2-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:61.86%; --y:27.38%; --w:7.98%; --r:0.308"><img src="img/orchestra/design-2-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:14.24%; --y:27.26%; --w:7.98%; --r:0.307"><img src="img/orchestra/design-2-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:70.35%; --y:27.26%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-2-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:22.74%; --y:27.26%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-2-6.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:78.1%; --y:27.26%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-2-7.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:30.49%; --y:27.26%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-2-8.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:85.85%; --y:27.38%; --w:7.35%; --r:0.283"><img src="img/orchestra/design-2-9.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:38.24%; --y:27.26%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-2-10.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 3 · figurini 2 (davanti) -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:53.76%; --y:29.29%; --w:8.37%; --r:0.322"><img src="img/orchestra/design-3-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:62.5%; --y:29.29%; --w:7.98%; --r:0.308"><img src="img/orchestra/design-3-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:71.0%; --y:29.17%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-3-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:78.75%; --y:29.17%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-3-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:86.5%; --y:29.29%; --w:7.35%; --r:0.283"><img src="img/orchestra/design-3-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:6.15%; --y:29.17%; --w:8.37%; --r:0.321"><img src="img/orchestra/design-3-6.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:14.89%; --y:29.17%; --w:7.98%; --r:0.307"><img src="img/orchestra/design-3-7.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:23.38%; --y:29.17%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-3-8.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:31.13%; --y:29.17%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-3-9.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:38.89%; --y:29.17%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-3-10.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 4 · figurini 3 (dietro) -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:53.35%; --y:32.04%; --w:8.37%; --r:0.322"><img src="img/orchestra/design-4-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:62.09%; --y:32.04%; --w:7.98%; --r:0.308"><img src="img/orchestra/design-4-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:70.59%; --y:31.92%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-4-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:78.34%; --y:31.92%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-4-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:86.09%; --y:32.04%; --w:7.35%; --r:0.283"><img src="img/orchestra/design-4-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:5.74%; --y:31.92%; --w:8.37%; --r:0.321"><img src="img/orchestra/design-4-6.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:14.48%; --y:31.92%; --w:7.98%; --r:0.307"><img src="img/orchestra/design-4-7.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:22.97%; --y:31.92%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-4-8.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:30.72%; --y:31.92%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-4-9.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:38.48%; --y:31.92%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-4-10.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 5 · figurini 4 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:53.35%; --y:31.48%; --w:8.37%; --r:0.322"><img src="img/orchestra/design-5-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:62.09%; --y:31.48%; --w:7.98%; --r:0.308"><img src="img/orchestra/design-5-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:70.59%; --y:31.35%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-5-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:78.34%; --y:31.35%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-5-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:86.09%; --y:31.48%; --w:7.35%; --r:0.283"><img src="img/orchestra/design-5-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:5.74%; --y:31.35%; --w:8.37%; --r:0.321"><img src="img/orchestra/design-5-6.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:14.48%; --y:31.35%; --w:7.98%; --r:0.307"><img src="img/orchestra/design-5-7.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:22.97%; --y:31.35%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-5-8.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:30.72%; --y:31.35%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-5-9.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:38.48%; --y:31.35%; --w:7.35%; --r:0.282"><img src="img/orchestra/design-5-10.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 6 · trench · disegno e tecnico -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:9.58%; --y:16.52%; --w:12.99%; --r:0.27"><img src="img/orchestra/design-6-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:23.9%; --y:16.55%; --w:12.7%; --r:0.265"><img src="img/orchestra/design-6-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:40.29%; --y:12.88%; --w:52.1%; --r:1.024"><img src="img/orchestra/design-6-tech.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 7 · cappotto · disegno e tecnico -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:8.51%; --y:13.67%; --w:14.06%; --r:0.292"><img src="img/orchestra/design-7-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:23.9%; --y:13.65%; --w:14.51%; --r:0.302"><img src="img/orchestra/design-7-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:36.98%; --y:14.74%; --w:53.47%; --r:1.045"><img src="img/orchestra/design-7-tech.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 8 · giacca · disegno e tecnico -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:7.81%; --y:11.53%; --w:12.88%; --r:0.268"><img src="img/orchestra/design-8-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:22.02%; --y:11.53%; --w:12.88%; --r:0.268"><img src="img/orchestra/design-8-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:38.43%; --y:23.91%; --w:50.27%; --r:1.349"><img src="img/orchestra/design-8-tech.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 9 · camicia e pantaloni · disegno e tecnico -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:7.37%; --y:10.78%; --w:13.98%; --r:0.291"><img src="img/orchestra/design-9-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:22.68%; --y:10.81%; --w:13.26%; --r:0.276"><img src="img/orchestra/design-9-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:39.09%; --y:5.23%; --w:51.96%; --r:0.931"><img src="img/orchestra/design-9-tech.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+        </div>
+      </section>
+
+      <section class="chapter" id="orchestra-development">
+        <header class="chapter__head">
+          <h2 class="chapter__title">/development.</h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Orchestra — development">
+
+          <!-- Pagina 1 · trench: prototipi -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:53.76%; --y:18.64%; --w:10.5%; --r:0.61"><img src="img/orchestra/development-1-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.76%; --y:48.3%; --w:10.5%; --r:0.61"><img src="img/orchestra/development-1-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:65.6%; --y:18.64%; --w:10.5%; --r:0.61"><img src="img/orchestra/development-1-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:65.6%; --y:48.3%; --w:10.5%; --r:0.61"><img src="img/orchestra/development-1-4.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:6.15%; --y:9.5%; --w:23.66%; --r:0.633"><img src="img/orchestra/development-1-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:11.01%; --y:21.55%; --w:14.12%; --r:0.702"><img src="img/orchestra/development-1-6.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:27.41%; --y:22.38%; --w:18.82%; --r:0.906"><img src="img/orchestra/development-1-7.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:3.49%; --y:4.5%; --w:93.01%; --r:1.558"><img src="img/orchestra/development-1-8.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 2 · giacca -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:4.53%; --y:4.26%; --w:23.66%; --r:0.7"><img src="img/orchestra/development-2-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:28.2%; --y:57.08%; --w:16.42%; --r:0.702"><img src="img/orchestra/development-2-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:69.89%; --y:47.22%; --w:22.34%; --r:0.759"><img src="img/orchestra/development-2-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:9.39%; --y:10.56%; --w:14.12%; --r:0.702"><img src="img/orchestra/development-2-4.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:25.79%; --y:11.39%; --w:18.82%; --r:0.906"><img src="img/orchestra/development-2-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:49.96%; --y:17.54%; --w:9.52%; --r:0.744"><img src="img/orchestra/development-2-6.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:61.03%; --y:17.54%; --w:9.52%; --r:0.744"><img src="img/orchestra/development-2-7.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:72.09%; --y:17.54%; --w:9.52%; --r:0.744"><img src="img/orchestra/development-2-8.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:1.88%; --y:0.0%; --w:93.01%; --r:1.507"><img src="img/orchestra/development-2-9.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 3 · pieghe -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:63.13%; --y:21.45%; --w:21.88%; --r:0.613"><img src="img/orchestra/development-3-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 4 · pantaloni -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:6.83%; --y:15.35%; --w:23.66%; --r:0.692"><img src="img/orchestra/development-4-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:11.69%; --y:22.3%; --w:14.12%; --r:0.702"><img src="img/orchestra/development-4-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:28.09%; --y:23.13%; --w:18.82%; --r:0.77"><img src="img/orchestra/development-4-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:54.45%; --y:19.39%; --w:10.5%; --r:0.61"><img src="img/orchestra/development-4-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:54.45%; --y:49.05%; --w:10.5%; --r:0.61"><img src="img/orchestra/development-4-5.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:66.28%; --y:19.39%; --w:10.5%; --r:0.61"><img src="img/orchestra/development-4-6.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:66.28%; --y:49.05%; --w:10.5%; --r:0.615"><img src="img/orchestra/development-4-7.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:4.18%; --y:5.25%; --w:93.01%; --r:1.571"><img src="img/orchestra/development-4-8.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 5 · giacca: prototipi -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:75.5%; --y:55.32%; --w:16.42%; --r:0.702"><img src="img/orchestra/development-5-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:4.22%; --y:0.0%; --w:23.66%; --r:0.669"><img src="img/orchestra/development-5-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:9.08%; --y:8.8%; --w:14.12%; --r:0.702"><img src="img/orchestra/development-5-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:25.48%; --y:8.38%; --w:18.82%; --r:0.683"><img src="img/orchestra/development-5-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:51.83%; --y:5.89%; --w:10.5%; --r:0.61"><img src="img/orchestra/development-5-5.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:63.67%; --y:5.89%; --w:10.5%; --r:0.61"><img src="img/orchestra/development-5-6.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:1.56%; --y:0.0%; --w:93.01%; --r:1.534"><img src="img/orchestra/development-5-7.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+        </div>
+      </section>
+
+      <!-- ---------- Photoshoot ---------- -->
+      <section class="chapter" id="orchestra-photoshoot">
+        <header class="chapter__head">
+          <h2 class="chapter__title">/photoshoot.</h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Orchestra — photoshoot">
+
+          <!-- Pagina 1 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:2.81%; --y:10.15%; --w:33.19%; --r:0.666"><img src="img/orchestra/photoshoot-1-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.49%; --y:0.0%; --w:46.51%; --r:0.744"><img src="img/orchestra/photoshoot-1-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 2 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:29.38%; --y:63.54%; --w:10.48%; --r:0.725"><img src="img/orchestra/photoshoot-2-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.49%; --y:0.0%; --w:46.51%; --r:0.744"><img src="img/orchestra/photoshoot-2-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 3 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:46.04%; --r:0.737"><img src="img/orchestra/photoshoot-3-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 4 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:53.49%; --y:0.0%; --w:46.51%; --r:0.744"><img src="img/orchestra/photoshoot-4-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 5 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:58.91%; --y:0.0%; --w:41.09%; --r:0.657"><img src="img/orchestra/photoshoot-5-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 6 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:42.83%; --y:34.28%; --w:14.34%; --r:0.73"><img src="img/orchestra/photoshoot-6-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:64.0%; --y:10.15%; --w:33.19%; --r:0.666"><img src="img/orchestra/photoshoot-6-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 7 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:46.51%; --r:0.744"><img src="img/orchestra/photoshoot-7-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:73.56%; --y:23.27%; --w:23.62%; --r:0.707"><img src="img/orchestra/photoshoot-7-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 8 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:27.81%; --y:23.22%; --w:27.19%; --r:0.817"><img src="img/orchestra/photoshoot-8-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.81%; --y:0.0%; --w:44.19%; --r:0.707"><img src="img/orchestra/photoshoot-8-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 9 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:46.51%; --r:0.744"><img src="img/orchestra/photoshoot-9-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 10 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:53.75%; --y:0.0%; --w:46.25%; --r:0.74"><img src="img/orchestra/photoshoot-10-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:31.42%; --w:34.87%; --r:1.501"><img src="img/orchestra/photoshoot-10-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 11 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.1%; --y:0.0%; --w:99.81%; --r:1.597"><img src="img/orchestra/photoshoot-11-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 12 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:2.81%; --y:28.08%; --w:18.25%; --r:0.666"><img src="img/orchestra/photoshoot-12-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:22.28%; --y:10.15%; --w:33.19%; --r:0.666"><img src="img/orchestra/photoshoot-12-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 13 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:100.0%; --r:1.6"><img src="img/orchestra/photoshoot-13-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 14 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:100.0%; --r:1.6"><img src="img/orchestra/photoshoot-14-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 15 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:16.41%; --y:22.11%; --w:23.23%; --r:0.666"><img src="img/orchestra/photoshoot-15-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:64.0%; --y:10.15%; --w:33.19%; --r:0.666"><img src="img/orchestra/photoshoot-15-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 16 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:2.81%; --y:24.85%; --w:47.19%; --r:1.501"><img src="img/orchestra/photoshoot-16-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:64.0%; --y:10.15%; --w:33.19%; --r:0.666"><img src="img/orchestra/photoshoot-16-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 17 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:2.81%; --y:27.7%; --w:41.84%; --r:1.501"><img src="img/orchestra/photoshoot-17-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:47.66%; --y:0.0%; --w:52.34%; --r:0.838"><img src="img/orchestra/photoshoot-17-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 18 -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:33.41%; --y:10.15%; --w:33.19%; --r:0.666"><img src="img/orchestra/photoshoot-18-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <span class="vbar" style="--x:68.91%; --y:0%; --h:100%" aria-hidden="true"></span>
+          </div></div>
+
+        </div>
+      </section>
+
+    </article>
+
+    <!-- ================== WINDOW ================== -->
+    <!-- Questo progetto è 16:9 (non 16:10): la proporzione si cambia con --sheet-ratio nello style qui sotto. -->
+    <article class="project project--wide" id="window" style="--sheet-ratio:1.7778">
+
+      <!-- ---------- Window: UNO slideshow solo ----------
+           Titolo → research → design → development, tutto nello stesso scorrimento orizzontale.
+           Il titolo in alto cambia da solo in base al data-section di ogni pagina
+           (data-section="" = nessun titolo). Per spostare una pagina da una sezione all'altra
+           basta tagliare e incollare il blocco <div class="page"> e metterlo dove serve. -->
+      <section class="chapter" id="window-main">
+        <header class="chapter__head">
+          <h2 class="chapter__title"></h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Window — titolo, research, design, development">
+
+          <!-- Titolo -->
+          <div class="page" data-section=""><div class="sheet">
+          <span class="cover__line" style="left:13.1%; width:.16cqw; min-width:1px" aria-hidden="true"></span>
+                      <figure class="item" style="--x:14.9%; --y:25.52%; --w:12.81%; --r:1.06"><img src="img/window/window-cover.jpg" alt="Window" draggable="false" loading="lazy"></figure>
+
+          <h1 class="txt txt--title" style="--x:30.3%; --y:33.4%; --fs:2.4">WINDOW</h1>
+          <p class="txt txt--r txt--credits" style="--x:42.8%; --y:41.3%">AIDA FLECHA<br>ANH THU HUYNH<br>GIORGIA MONTICCIOLO<br>GIULIA D’ALESSANDRO</p>
+          <p class="txt txt--r txt--credits" style="--x:42.8%; --y:53.8%">A PROJECT ABOUT<br>BIOMATERIALS</p>
+          <p class="txt txt--wrap" style="--x:57.9%; --y:39.5%; --w:36.5%; --fs:1.04; --lh:1.4">WINDOW explores how a bio-plastic material, reminiscent of alabaster, can transform through light and movement. The garment is a large modular circle, halfway between a cape and a stained-glass window, which can be worn in different ways to play with light and shadow on the body. Through patchwork, boning, and ribbons that the wearer pulls and shapes, the material becomes wearable architecture: a small luminous building that filters the outside world and turns the body into part of the structure itself, balancing lightness and weight, opacity and transparency.</p>
+          <p class="deco" style="--x:15.65%; --y:48.3%" aria-hidden="true"><span>⋆</span><span>.</span><span>☩</span><span>.</span><span>⋆</span><span>.</span></p>
+        </div></div>
+
+          <!-- ===== research ===== -->
+          <!-- Pagina 1 · materiali -->
+          <div class="page" data-section="research"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:5.0%; --w:31.29%; --r:0.618"><img src="img/window/research-1-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:71.08%; --y:32.16%; --w:11.09%; --r:0.67"><img src="img/window/research-1-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:82.15%; --y:46.89%; --w:14.32%; --r:0.667"><img src="img/window/research-1-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:40.81%; --y:28.32%; --w:11.01%; --r:0.563"><img src="img/window/research-1-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:43.03%; --y:38.16%; --w:6.52%; --r:0.642"><img src="img/window/research-1-5.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:32.74%; --y:39.88%; --w:8.08%; --r:0.701"><img src="img/window/research-1-6.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:35.93%; --y:32.16%; --w:2.62%; --r:0.478"><img src="img/window/research-1-7.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:50.61%; --y:49.08%; --w:7.08%; --r:0.562"><img src="img/window/research-1-8.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="deco" style="--x:79.9%; --y:0.3%" aria-hidden="true"><span>.</span><span>☩</span><span>.</span><span>⋆</span><span>.</span></p>
+            <!-- didascalie dei materiali: --x = centro del testo, --y = altezza, --fs = grandezza -->
+            <p class="txt txt--c txt--cap txt--title" style="--x:36.8%; --y:61.2%; --fs:1.5">POTATOES</p>
+            <p class="txt txt--c txt--cap" style="--x:36.8%; --y:66.1%">AND LATEX WITH<br>TREATMENTS</p>
+            <p class="txt txt--c txt--cap" style="--x:36.8%; --y:72.1%">CHARACTERISTICS:<br>60%<br>(TRANSLUCENT)<br>LIGHT DIFFUSION<br>SOFT TEXTURE</p>
+
+            <p class="txt txt--c txt--cap txt--title" style="--x:46.3%; --y:58.2%; --fs:1.5">OAT</p>
+            <p class="txt txt--c txt--cap" style="--x:46.3%; --y:62.2%">AND LATEX WITH<br>TREATMENTS</p>
+            <p class="txt txt--c txt--cap" style="--x:46.3%; --y:67.8%">CHARACTERISTICS:<br>40% (TRANSLUCENT)<br>SOFT LIGHT<br>DIFFUSION<br>RELIEF TEXTURE</p>
+
+            <p class="txt txt--c txt--cap txt--title" style="--x:54.4%; --y:67.8%; --fs:.85">POTATOES</p>
+            <p class="txt txt--c txt--cap" style="--x:62%; --y:45.9%">PEELS, BINDED BY<br>LATEX, COATING<br>POLYESTER AND<br>COTTON SURFACE</p>
+            <p class="txt txt--c txt--cap" style="--x:62%; --y:54.1%">CHARACTERISTICS:<br>REINFORCED BASE<br>GOOD WEAR<br>RESISTANCE<br>IRREGULAR<br>TEXTURE</p>
+          </div></div>
+          <!-- Pagina 2 -->
+          <div class="page" data-section="research"><div class="sheet">
+            <figure class="item" style="--x:3.07%; --y:31.85%; --w:21.67%; --r:0.656"><img src="img/window/research-2-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:49.14%; --y:17.08%; --w:19.17%; --r:0.636"><img src="img/window/research-2-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:26.39%; --y:41.83%; --w:15.31%; --r:0.875"><img src="img/window/research-2-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:68.32%; --y:38.04%; --w:29.36%; --r:1.005"><img src="img/window/research-2-4.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 3 -->
+          <div class="page" data-section="research"><div class="sheet">
+            <figure class="item" style="--x:10.78%; --y:25.11%; --w:20.57%; --r:1.142"><img src="img/window/research-3-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:31.35%; --y:52.05%; --w:24.95%; --r:1.101"><img src="img/window/research-3-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:72.5%; --y:10.0%; --w:21.87%; --r:0.825"><img src="img/window/research-3-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- ===== design ===== -->
+          <!-- Pagina 1 · figurini -->
+          <div class="page" data-section="design"><div class="sheet">
+            <figure class="item" style="--x:66.44%; --y:10.0%; --w:24.58%; --r:0.708"><img src="img/window/design-1-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:46.82%; --y:28.2%; --w:24.58%; --r:0.708"><img src="img/window/design-1-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:8.97%; --y:22.72%; --w:24.58%; --r:0.708"><img src="img/window/design-1-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:28.09%; --y:10.0%; --w:23.85%; --r:0.706"><img src="img/window/design-1-4.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="deco deco--row" style="--x:41.3%; --y:46.4%" aria-hidden="true">+ ⊹ . ✧ . ⊹ + .</p>
+          </div></div>
+          <!-- Pagina 2 · frase -->
+          <div class="page" data-section="design"><div class="sheet">
+            <p class="txt txt--big" style="--x:5.6%; --y:39.1%">A SHAPE CREATED BY<br>THE INTERACTION<br>WITH THE BODY</p>
+          </div></div>
+          <!-- Pagina 3 · cartamodelli -->
+          <div class="page" data-section="design"><div class="sheet">
+            <figure class="item" style="--x:-5.36%; --y:-3.4%; --w:44.07%; --r:1.026"><img src="img/window/design-3-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:24.36%; --y:34.56%; --w:35.47%; --r:0.964"><img src="img/window/design-3-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:56.66%; --y:57.31%; --w:29.81%; --r:1.778"><img src="img/window/design-3-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:76.02%; --y:34.51%; --w:24.07%; --r:1.778"><img src="img/window/design-3-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="deco deco--row" style="--x:62.5%; --y:81.2%" aria-hidden="true">+ ⊹ . ✧ . ⊹ + .</p>
+          </div></div>
+          <!-- Pagina 4 · tecnici -->
+          <div class="page" data-section="design"><div class="sheet">
+            <figure class="item" style="--x:1.01%; --y:16.94%; --w:24.07%; --r:1.778"><img src="img/window/design-4-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:19.04%; --y:28.94%; --w:36.85%; --r:1.009"><img src="img/window/design-4-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.23%; --y:27.02%; --w:18.0%; --r:1.005"><img src="img/window/design-4-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="deco" style="--x:42.6%; --y:-3.3%" aria-hidden="true"><span>⋆</span><span>.</span><span>☩</span><span>.</span><span>⋆</span><span>.</span></p>
+          </div></div>
+          <!-- ===== development ===== -->
+          <!-- Pagina 1 · prove -->
+          <div class="page" data-section="development"><div class="sheet">
+            <figure class="item" style="--x:6.42%; --y:48.56%; --w:20.73%; --r:0.954"><img src="img/window/development-1-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:20.23%; --y:23.57%; --w:16.98%; --r:1.278"><img src="img/window/development-1-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:3.44%; --y:10.0%; --w:15.68%; --r:0.751"><img src="img/window/development-1-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:70.44%; --y:7.11%; --w:24.95%; --r:0.535"><img src="img/window/development-1-4.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="deco" style="--x:68.1%; --y:66.5%" aria-hidden="true"><span>⋆</span><span>.</span><span>☩</span><span>.</span><span>⋆</span><span>.</span></p>
+          </div></div>
+          <!-- Pagina 2 -->
+          <div class="page" data-section="development"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:33.72%; --w:15.52%; --r:1.0"><img src="img/window/development-2-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:16.7%; --y:50.0%; --w:19.22%; --r:0.939"><img src="img/window/development-2-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:48.41%; --y:20.08%; --w:14.01%; --r:0.833"><img src="img/window/development-2-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:64.15%; --y:11.59%; --w:16.61%; --r:0.594"><img src="img/window/development-2-4.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="deco" style="--x:82.6%; --y:55.0%" aria-hidden="true"><span>⋆</span><span>.</span><span>☩</span><span>.</span><span>⋆</span><span>.</span></p>
+          </div></div>
+          <!-- Pagina 3 · cucitura -->
+          <div class="page" data-section="development"><div class="sheet">
+            <figure class="item" style="--x:1.97%; --y:27.33%; --w:19.99%; --r:1.211"><img src="img/window/development-3-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:59.73%; --y:0.0%; --w:40.26%; --r:0.716"><img src="img/window/development-3-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="deco deco--row" style="--x:23.75%; --y:50.6%" aria-hidden="true">+ ⊹ . ✧ . ⊹ + .</p>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- ---------- Photoshoot (slideshow a parte) ---------- -->
+      <section class="chapter" id="window-photoshoot">
+        <header class="chapter__head">
+          <h2 class="chapter__title">/photoshoot.</h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Window — photoshoot">
+
+          <!-- Pagina 1 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:32.63%; --y:0.0%; --w:34.73%; --r:0.618"><img src="img/window/photoshoot-1-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 2 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:0.0%; --w:100.0%; --r:1.778"><img src="img/window/photoshoot-2-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 3 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:5.71%; --w:31.89%; --r:0.64"><img src="img/window/photoshoot-3-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:50.0%; --y:26.83%; --w:17.92%; --r:0.637"><img src="img/window/photoshoot-3-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:70.29%; --y:0.0%; --w:29.71%; --r:0.528"><img src="img/window/photoshoot-3-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 4 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:44.55%; --y:25.92%; --w:18.07%; --r:0.667"><img src="img/window/photoshoot-4-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:2.49%; --y:14.12%; --w:24.53%; --r:0.608"><img src="img/window/photoshoot-4-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 5 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:0.0%; --w:40.94%; --r:0.728"><img src="img/window/photoshoot-5-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:74.2%; --y:37.88%; --w:20.16%; --r:0.666"><img src="img/window/photoshoot-5-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 6 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:0.0%; --w:100.0%; --r:1.778"><img src="img/window/photoshoot-6-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+        </div>
+      </section>
+    </article>
+
+
+    <!-- ==================================================================
+         BACHELOR
+         ================================================================== -->
+
+    <!-- ================== COPERTINA SEZIONE BACHELOR ================== -->
+    <!-- Il titolo "Bachelor" nel menu a sinistra porta qui. -->
+    <article class="project project--wide" id="bachelor" style="--sheet-ratio:1.7778">
+      <section class="chapter chapter--solo" id="bachelor-cover">
+        <header class="chapter__head"></header>
+        <div class="hscroll" aria-label="Bachelor — copertina">
+
+          <!-- Copertina della sezione Bachelor (elenco dei progetti) -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:70.39%; --y:44.81%; --w:4.33%; --r:0.947"><img src="img/triennale/bachelor-1-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:70.37%; --y:51.12%; --w:4.56%; --r:1.121"><img src="img/triennale/bachelor-1-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:70.35%; --y:56.88%; --w:4.33%; --r:0.979"><img src="img/triennale/bachelor-1-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:69.79%; --y:64.17%; --w:4.97%; --r:1.347"><img src="img/triennale/bachelor-1-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:6.48%; --w:53.19%; --r:1.086"><img src="img/triennale/bachelor-1-5.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt" style="--x:67.57%; --y:48.85%; --fs:0.625; --lh:1.2"><i>DESIGN</i></p>
+            <p class="txt" style="--x:73.38%; --y:48.85%; --fs:0.625; --lh:1.2">ARNE DI STELLA</p>
+            <p class="txt" style="--x:83.1%; --y:48.85%; --fs:0.625; --lh:1.2">SEP. 2023 - JAN 2024</p>
+            <p class="txt" style="--x:73.38%; --y:55.16%; --fs:0.625; --lh:1.2">PEEDWAY TO ABSOLUTION</p>
+            <p class="txt" style="--x:83.33%; --y:55.16%; --fs:0.625; --lh:1.2">MAR. 2023 - JUL 2023</p>
+            <p class="txt" style="--x:73.38%; --y:61.41%; --fs:0.625; --lh:1.2">HARITY</p>
+            <p class="txt" style="--x:83.33%; --y:61.41%; --fs:0.625; --lh:1.2">SEP. 2022 - JAN 2023</p>
+            <p class="txt" style="--x:73.38%; --y:67.68%; --fs:0.625; --lh:1.2">ONACÒ</p>
+            <p class="txt" style="--x:83.33%; --y:67.68%; --fs:0.625; --lh:1.2">MAR. 2022 - JUL 2022</p>
+          </div></div>
+        </div>
+      </section>
+    </article>
+
+    <!-- ================== USATE DOLCEZZA MIEI PRODI ================== -->
+    <article class="project" id="usate-dolcezza">
+      <section class="cover cover--soon" aria-label="Usate dolcezza miei prodi — copertina">
+        <div class="sheet">
+          <span class="cover__line" aria-hidden="true"></span>
+          <div class="cover__main">
+            <h1 class="cover__title cover__title--long">Usate dolcezza miei prodi</h1>
+            <p class="cover__kind">Exercise gentleness my brave ones</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- ================== CARNE DI STELLA ================== -->
+    <!-- Un solo slideshow: titolo → research → design → shooting. Le pagine sono 16:9. -->
+    <article class="project project--wide" id="carne-di-stella" style="--sheet-ratio:1.7778">
+      <section class="chapter chapter--solo" id="carne-di-stella-slideshow">
+        <header class="chapter__head">
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Carne di stella — slideshow">
+
+          <!-- Pagina 1 · titolo -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:66.47%; --y:37.71%; --w:13.28%; --r:0.77"><img src="img/triennale/carne-1-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:69.01%; --y:41.39%; --w:9.88%; --r:0.692"><img src="img/triennale/carne-1-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:60.66%; --y:24.16%; --w:20.75%; --r:0.699"><img src="img/triennale/carne-1-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:79.99%; --y:42.14%; --w:10.05%; --r:3.587"><img src="img/triennale/carne-1-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt" style="--x:80.01%; --y:41.38%; --fs:1.562; --lh:0.98">ARNE DI STELLA</p>
+            <p class="txt" style="--x:80.04%; --y:47.62%; --fs:0.625; --lh:1.2">RESEARCH OF INSPIRATION TO MAKE<br>UP AN <b>ARTBOOK</b></p>
+            <p class="txt" style="--x:80.01%; --y:53.8%; --fs:0.625; --lh:1.2">DESIGN AND DEVELOPMENT OF A<br>10-GARMENT <b>COLLECTION</b></p>
+            <p class="txt" style="--x:80.08%; --y:60.05%; --fs:0.625; --lh:1.2">PROTOTYPING AND TAILORING OF<br><b>3-4 GARMENTS</b></p>
+          </div></div>
+          <!-- Pagina 2 · research -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:10.29%; --y:18.98%; --w:79.43%; --r:2.276"><img src="img/triennale/carne-2-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 3 · design -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:3.65%; --y:19.0%; --w:46.51%; --r:1.139"><img src="img/triennale/carne-3-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:64.16%; --y:19.9%; --w:31.0%; --r:0.75"><img src="img/triennale/carne-3-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:64.16%; --y:10.17%; --w:30.44%; --r:1.229"><img src="img/triennale/carne-3-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.64%; --y:50.23%; --w:3.96%; --r:0.914"><img src="img/triennale/carne-3-4.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:59.86%; --y:44.43%; --w:3.09%; --r:1.03"><img src="img/triennale/carne-3-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.72%; --y:45.03%; --w:3.09%; --r:1.232"><img src="img/triennale/carne-3-6.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.72%; --y:41.16%; --w:3.09%; --r:1.232"><img src="img/triennale/carne-3-7.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.59%; --y:42.0%; --w:2.63%; --r:1.047"><img src="img/triennale/carne-3-8.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.44%; --y:45.09%; --w:2.88%; --r:1.145"><img src="img/triennale/carne-3-9.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.44%; --y:40.91%; --w:2.88%; --r:0.958"><img src="img/triennale/carne-3-10.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.44%; --y:50.28%; --w:4.28%; --r:0.998"><img src="img/triennale/carne-3-11.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.45%; --y:62.74%; --w:9.18%; --r:0.785"><img src="img/triennale/carne-3-12.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt" style="--x:53.45%; --y:19.07%; --fs:0.729; --lh:1.2"><b>Manipulations</b></p>
+            <p class="txt" style="--x:53.45%; --y:21.78%; --fs:0.729; --lh:1.2">encrusted lace</p>
+            <p class="txt" style="--x:53.45%; --y:25.31%; --fs:0.729; --lh:1.2"><b>Notes</b></p>
+            <p class="txt" style="--x:53.45%; --y:28.01%; --fs:0.729; --lh:1.2">4 cm plackets<br>macrame buttoning using<br>pearls n.1<br>1.5 cm rolled hem<br>unlined</p>
+          </div></div>
+          <!-- Pagina 4 · figurini -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:9.79%; --y:18.46%; --w:81.43%; --r:2.181"><img src="img/triennale/carne-4-page.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 5 · shooting -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:100.0%; --r:1.778"><img src="img/triennale/carne-5-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+        </div>
+      </section>
+    </article>
+
+    <!-- ================== SPEEDWAY TO ABSOLUTION ================== -->
+    <!-- Un solo slideshow: titolo → research → design → shooting. Le pagine sono 16:9. -->
+    <article class="project project--wide" id="speedway-to-absolution" style="--sheet-ratio:1.7778">
+      <section class="chapter chapter--solo" id="speedway-to-absolution-slideshow">
+        <header class="chapter__head">
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Speedway to absolution — slideshow">
+
+          <!-- Pagina 1 · titolo -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.04%; --y:0.0%; --w:46.51%; --r:0.829"><img src="img/triennale/speedway-1-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:66.73%; --y:31.55%; --w:13.02%; --r:0.753"><img src="img/triennale/speedway-1-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:72.22%; --y:38.07%; --w:5.64%; --r:0.433"><img src="img/triennale/speedway-1-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:63.41%; --y:25.23%; --w:19.56%; --r:0.755"><img src="img/triennale/speedway-1-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:79.44%; --y:30.93%; --w:10.13%; --r:3.08"><img src="img/triennale/speedway-1-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt" style="--x:80.01%; --y:35.13%; --fs:1.562; --lh:0.98">PEEDWAY TO<br>ABSOLUTION</p>
+            <p class="txt" style="--x:80.08%; --y:41.32%; --fs:0.625; --lh:1.2">CHOICE OF A <b>PAIRING</b>: DESIGN BRAND<br>AND FASHION DESIGNER</p>
+            <p class="txt" style="--x:80.01%; --y:47.53%; --fs:0.625; --lh:1.2">DESIGN AND DEVELOPMENT OF A<br>30-LOOK <b>COLLAB</b> COLLECTION</p>
+            <p class="txt" style="--x:80.01%; --y:53.83%; --fs:0.625; --lh:1.2">PROTOTYPING AND TAILORING OF AT<br>LEAST ONE <b>OUTERWEAR PIECE</b></p>
+            <p class="txt" style="--x:80.01%; --y:62.7%; --fs:0.625; --lh:1.2"><b>GROUP PROJECT</b></p>
+            <p class="txt" style="--x:80.01%; --y:64.03%; --fs:0.625; --lh:1.2">ROLES TAKEN:<br>CREATIVE DIRECTION<br>DESIGN AND<br>DEVELOPMENT<br>PATTERNMAKING<br>PROTOTYPING<br>PATTERN DESIGN<br>MAKING OF BOTH<br>ACCESSORIES</p>
+          </div></div>
+          <!-- Pagina 2 · research -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:10.29%; --y:18.98%; --w:79.43%; --r:2.276"><img src="img/triennale/speedway-2-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 3 · design -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:49.87%; --r:0.887"><img src="img/triennale/speedway-3-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:7.81%; --y:0.0%; --w:42.06%; --r:0.748"><img src="img/triennale/speedway-3-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:17.59%; --y:46.02%; --w:21.59%; --r:0.711"><img src="img/triennale/speedway-3-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:37.17%; --y:0.0%; --w:12.69%; --r:0.429"><img src="img/triennale/speedway-3-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:11.07%; --y:3.08%; --w:15.69%; --r:0.466"><img src="img/triennale/speedway-3-6.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:28.11%; --y:0.0%; --w:21.76%; --r:0.604"><img src="img/triennale/speedway-3-7.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.45%; --y:18.82%; --w:4.63%; --r:0.452"><img src="img/triennale/speedway-3-8.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:63.15%; --y:16.99%; --w:30.76%; --r:0.848"><img src="img/triennale/speedway-3-9.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.28%; --y:35.15%; --w:6.47%; --r:0.766"><img src="img/triennale/speedway-3-10.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.26%; --y:49.79%; --w:4.86%; --r:1.255"><img src="img/triennale/speedway-3-11.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.55%; --y:35.59%; --w:4.86%; --r:0.477"><img src="img/triennale/speedway-3-12.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.38%; --y:18.82%; --w:4.56%; --r:0.484"><img src="img/triennale/speedway-3-13.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.38%; --y:49.15%; --w:4.86%; --r:1.148"><img src="img/triennale/speedway-3-14.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.34%; --y:58.55%; --w:4.86%; --r:1.255"><img src="img/triennale/speedway-3-15.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.27%; --y:66.46%; --w:4.86%; --r:1.255"><img src="img/triennale/speedway-3-16.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.47%; --y:58.23%; --w:4.86%; --r:1.148"><img src="img/triennale/speedway-3-17.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 4 · figurini -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:2.74%; --y:17.45%; --w:7.8%; --r:0.44"><img src="img/triennale/speedway-4-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:2.74%; --y:49.93%; --w:7.8%; --r:0.441"><img src="img/triennale/speedway-4-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:9.22%; --y:17.85%; --w:7.8%; --r:0.445"><img src="img/triennale/speedway-4-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:41.59%; --y:49.93%; --w:7.8%; --r:0.441"><img src="img/triennale/speedway-4-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:41.59%; --y:17.58%; --w:7.8%; --r:0.442"><img src="img/triennale/speedway-4-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:35.12%; --y:50.13%; --w:7.8%; --r:0.443"><img src="img/triennale/speedway-4-6.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:28.65%; --y:50.0%; --w:7.8%; --r:0.442"><img src="img/triennale/speedway-4-7.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:22.17%; --y:50.13%; --w:7.8%; --r:0.443"><img src="img/triennale/speedway-4-8.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:15.69%; --y:51.31%; --w:7.8%; --r:0.461"><img src="img/triennale/speedway-4-9.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:9.22%; --y:50.52%; --w:7.8%; --r:0.449"><img src="img/triennale/speedway-4-10.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:35.12%; --y:17.52%; --w:7.8%; --r:0.441"><img src="img/triennale/speedway-4-11.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:28.64%; --y:17.75%; --w:7.8%; --r:0.445"><img src="img/triennale/speedway-4-12.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:22.17%; --y:17.49%; --w:7.8%; --r:0.442"><img src="img/triennale/speedway-4-13.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:15.69%; --y:16.9%; --w:7.8%; --r:0.433"><img src="img/triennale/speedway-4-14.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:50.87%; --y:17.65%; --w:7.8%; --r:0.443"><img src="img/triennale/speedway-4-15.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:89.72%; --y:49.41%; --w:7.8%; --r:0.433"><img src="img/triennale/speedway-4-16.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:89.72%; --y:17.45%; --w:7.8%; --r:0.44"><img src="img/triennale/speedway-4-17.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:83.24%; --y:50.13%; --w:7.8%; --r:0.443"><img src="img/triennale/speedway-4-18.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:83.24%; --y:17.52%; --w:7.8%; --r:0.441"><img src="img/triennale/speedway-4-19.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:50.87%; --y:50.0%; --w:7.8%; --r:0.441"><img src="img/triennale/speedway-4-20.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:76.77%; --y:50.0%; --w:7.8%; --r:0.441"><img src="img/triennale/speedway-4-21.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:76.77%; --y:17.49%; --w:7.8%; --r:0.442"><img src="img/triennale/speedway-4-22.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:70.0%; --y:50.13%; --w:7.8%; --r:0.443"><img src="img/triennale/speedway-4-23.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:70.29%; --y:17.52%; --w:7.8%; --r:0.441"><img src="img/triennale/speedway-4-24.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:63.82%; --y:49.6%; --w:7.8%; --r:0.436"><img src="img/triennale/speedway-4-25.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:57.34%; --y:50.59%; --w:7.8%; --r:0.449"><img src="img/triennale/speedway-4-26.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:63.82%; --y:18.24%; --w:7.8%; --r:0.451"><img src="img/triennale/speedway-4-27.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:57.34%; --y:17.82%; --w:7.8%; --r:0.446"><img src="img/triennale/speedway-4-28.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 5 · shooting -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:100.0%; --r:1.778"><img src="img/triennale/speedway-5-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+        </div>
+      </section>
+    </article>
+
+    <!-- ================== CHARITY ================== -->
+    <!-- Un solo slideshow: titolo → research → design → shooting. Le pagine sono 16:9. -->
+    <article class="project project--wide" id="charity" style="--sheet-ratio:1.7778">
+      <section class="chapter chapter--solo" id="charity-slideshow">
+        <header class="chapter__head">
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Charity — slideshow">
+
+          <!-- Pagina 1 · titolo -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:33.53%; --r:0.596"><img src="img/triennale/charity-1-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:66.73%; --y:31.53%; --w:12.97%; --r:0.75"><img src="img/triennale/charity-1-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:79.38%; --y:35.11%; --w:10.98%; --r:3.021"><img src="img/triennale/charity-1-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:70.03%; --y:37.27%; --w:8.4%; --r:0.626"><img src="img/triennale/charity-1-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:62.5%; --y:23.05%; --w:18.72%; --r:0.69"><img src="img/triennale/charity-1-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt" style="--x:80.01%; --y:35.06%; --fs:1.562; --lh:0.98">HARITY</p>
+            <p class="txt" style="--x:79.95%; --y:41.33%; --fs:0.625; --lh:1.2">RESEARCH OF AN ASSIGNED BRAND’S<br><b>CORE VALUES</b> AND ICONIC DESIGNS</p>
+            <p class="txt" style="--x:80.05%; --y:47.48%; --fs:0.625; --lh:1.2"><b>METADESIGN</b> OF A COLLAB INSPIRED BY<br>A MOVIE AS WOULD BE DESIGNED BY THE</p>
+            <p class="txt" style="--x:79.99%; --y:53.83%; --fs:0.625; --lh:1.2">DESIGN AND DEVELOPMENT OF THE<br><b>COLLAB</b> COLLECTION</p>
+            <p class="txt" style="--x:79.99%; --y:62.7%; --fs:0.625; --lh:1.2"><b>GROUP PROJECT</b></p>
+            <p class="txt" style="--x:79.99%; --y:64.03%; --fs:0.625; --lh:1.2">ROLES TAKEN:<br>RESEARCH<br>CREATIVE DIRECTION<br>DESIGN AND<br>DEVELOPMENT<br>ILLUSTRATION<br>TECHNICAL PLATS</p>
+          </div></div>
+          <!-- Pagina 2 · research -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:10.29%; --y:18.98%; --w:86.07%; --r:2.466"><img src="img/triennale/charity-2-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 3 · research -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:3.65%; --y:18.98%; --w:86.07%; --r:2.466"><img src="img/triennale/charity-3-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 4 · design -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:3.62%; --y:6.44%; --w:63.38%; --r:1.293"><img src="img/triennale/charity-4-left.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:67.42%; --y:44.51%; --w:14.27%; --r:0.64"><img src="img/triennale/charity-4-5.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:72.0%; --y:19.67%; --w:9.25%; --r:0.662"><img src="img/triennale/charity-4-6.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:81.65%; --y:44.51%; --w:14.27%; --r:0.64"><img src="img/triennale/charity-4-7.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:86.5%; --y:19.67%; --w:9.42%; --r:0.674"><img src="img/triennale/charity-4-8.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 5 · figurini -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:10.01%; --y:17.03%; --w:23.89%; --r:1.323"><img src="img/triennale/charity-5-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:10.28%; --y:49.49%; --w:23.54%; --r:1.305"><img src="img/triennale/charity-5-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:33.49%; --y:17.08%; --w:12.97%; --r:0.713"><img src="img/triennale/charity-5-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:34.27%; --y:48.75%; --w:12.95%; --r:0.711"><img src="img/triennale/charity-5-4.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:34.83%; --y:73.07%; --w:12.39%; --r:2.737"><img src="img/triennale/charity-5-5.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.04%; --y:49.81%; --w:12.95%; --r:0.711"><img src="img/triennale/charity-5-6.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.6%; --y:74.13%; --w:12.39%; --r:2.737"><img src="img/triennale/charity-5-7.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:65.56%; --y:17.76%; --w:24.41%; --r:1.355"><img src="img/triennale/charity-5-8.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:65.99%; --y:50.24%; --w:25.52%; --r:1.414"><img src="img/triennale/charity-5-9.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.04%; --y:17.56%; --w:12.68%; --r:0.697"><img src="img/triennale/charity-5-10.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+        </div>
+      </section>
+    </article>
+
+    <!-- ================== MONACÒ FAST AND SLOW ================== -->
+    <!-- Un solo slideshow: titolo → research → design → shooting. Le pagine sono 16:9. -->
+    <article class="project project--wide" id="monaco-fast-and-slow" style="--sheet-ratio:1.7778">
+      <section class="chapter chapter--solo" id="monaco-fast-and-slow-slideshow">
+        <header class="chapter__head">
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Monacò fast and slow — slideshow">
+
+          <!-- Pagina 1 · titolo -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:66.73%; --y:31.48%; --w:12.97%; --r:0.75"><img src="img/triennale/monaco-1-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:72.44%; --y:38.35%; --w:4.49%; --r:0.335"><img src="img/triennale/monaco-1-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:68.0%; --y:38.35%; --w:5.37%; --r:0.4"><img src="img/triennale/monaco-1-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:63.11%; --y:20.68%; --w:19.02%; --r:0.732"><img src="img/triennale/monaco-1-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:3.06%; --w:16.37%; --r:0.311"><img src="img/triennale/monaco-1-6.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:79.44%; --y:36.07%; --w:10.05%; --r:3.494"><img src="img/triennale/monaco-1-7.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt" style="--x:80.01%; --y:35.15%; --fs:1.562; --lh:0.98">ONACÒ</p>
+            <p class="txt" style="--x:80.01%; --y:41.33%; --fs:0.625; --lh:1.2">RESEARCH OF A CITY’S SCENERY,<br>PECULIARITIES AND <b>ATTIRE</b></p>
+            <p class="txt" style="--x:80.01%; --y:47.58%; --fs:0.625; --lh:1.2">DEVELOPMENT OF SILHOUETTES AND <b>FABRIC</b><br><b>MANIPULATION</b> INSPIRED BY THE RESEARCH</p>
+            <p class="txt" style="--x:80.01%; --y:53.83%; --fs:0.625; --lh:1.2">DESIGN AND DEVELOPMENT OF A<br>20-GARMENT <b>COLLECTION</b></p>
+            <p class="txt" style="--x:80.01%; --y:60.08%; --fs:0.625; --lh:1.2">DESIGN AND TAILORING OF THE<br><b>POLISHIRT</b></p>
+          </div></div>
+          <!-- Pagina 2 · research -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:10.29%; --y:12.73%; --w:79.43%; --r:1.894"><img src="img/triennale/monaco-2-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 3 · design -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:3.65%; --y:11.02%; --w:22.37%; --r:1.5"><img src="img/triennale/monaco-3-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:26.31%; --y:62.96%; --w:22.37%; --r:1.61"><img src="img/triennale/monaco-3-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:26.31%; --y:37.53%; --w:22.37%; --r:1.5"><img src="img/triennale/monaco-3-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:3.65%; --y:62.72%; --w:22.37%; --r:1.514"><img src="img/triennale/monaco-3-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:3.65%; --y:37.53%; --w:22.37%; --r:1.544"><img src="img/triennale/monaco-3-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:26.31%; --y:11.02%; --w:22.37%; --r:1.5"><img src="img/triennale/monaco-3-6.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:66.73%; --y:17.23%; --w:13.25%; --r:0.359"><img src="img/triennale/monaco-3-7.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:79.68%; --y:17.23%; --w:13.25%; --r:0.359"><img src="img/triennale/monaco-3-8.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.01%; --y:36.59%; --w:12.43%; --r:0.499"><img src="img/triennale/monaco-3-9.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt" style="--x:53.45%; --y:19.06%; --fs:0.729; --lh:1.2"><b>Manipulations</b></p>
+            <p class="txt" style="--x:53.45%; --y:21.76%; --fs:0.729; --lh:1.2">decorative seams<br>burnt edges</p>
+            <p class="txt" style="--x:53.49%; --y:25.38%; --fs:0.729; --lh:1.2"><b>Notes</b></p>
+            <p class="txt" style="--x:53.49%; --y:28.09%; --fs:0.729; --lh:1.2">cargo pockets<br>10 cm belt loops<br>unlined<br>full-length drawstrings</p>
+          </div></div>
+          <!-- Pagina 4 · figurini -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:8.49%; --y:23.31%; --w:85.71%; --r:2.684"><img src="img/triennale/monaco-4-page.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 5 · shooting -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:100.0%; --r:1.778"><img src="img/triennale/monaco-5-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+          <!-- Pagina 6 · shooting -->
+          <div class="page"><div class="sheet">
+                        <figure class="item" style="--x:0.0%; --y:0.0%; --w:34.16%; --r:0.607"><img src="img/triennale/monaco-6-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+        </div>
+      </section>
+    </article>
+
+    <!-- ================== BLACK SWAN (nascosto per ora) ==================
+         Per mostrarlo: togli i commenti qui e il commento attorno al suo link nel menu a sinistra.
+
+    <article class="project" id="black-swan">
+      <section class="cover cover--soon" aria-label="Black Swan — copertina">
+        <div class="sheet">
+          <span class="cover__line" aria-hidden="true"></span>
+          <div class="cover__main">
+            <h1 class="cover__title">Black Swan</h1>
+            <p class="cover__kind">coming soon</p>
+          </div>
+        </div>
+      </section>
+    </article>
+    ================================================================== -->
+
+
+    <!-- ==================================================================
+         TEMPLATE NUOVO PROGETTO
+         Per usarlo: togli la riga di commento che apre e quella che chiude,
+         cambia "nome-progetto" e "Nome progetto" e sostituisci il blocco
+         <article> "coming soon" del progetto con questo.
+         Per i capitoli design / development / photoshoot copia il capitolo
+         research e cambia id, titolo e aria-label.
+
+    <article class="project" id="nome-progetto">
+
+      <section class="cover" aria-label="Nome progetto — copertina">
+        <div class="sheet">
+          <span class="cover__line" aria-hidden="true"></span>
+          <div class="cover__credits">
+            <p class="cover__directed"><b>DIRECTED by</b> Nome COGNOME, Nome COGNOME</p>
+            <p class="cover__team">Nome Cognome, Nome Cognome</p>
+          </div>
+          <img class="cover__thumb" src="img/nome-progetto/copertina-miniatura.jpg" alt="" draggable="false">
+          <div class="cover__main">
+            <h1 class="cover__title">Nome progetto</h1>
+            <p class="cover__kind">TIPO</p>
+            <p class="cover__studio">Corso o studio</p>
+            <p class="cover__name">TITOLO DEL PROGETTO.</p>
+            <p class="cover__tagline">Una riga che racconta il progetto</p>
+            <p class="cover__dates">SEPT <b>‘25</b> FEB <b>‘26</b></p>
+          </div>
+          <p class="cover__place">created in Milan</p>
+          <div class="cover__desc">
+            <p>Prima parte della descrizione.</p>
+            <p>Seconda parte della descrizione.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter" id="nome-progetto-research">
+        <header class="chapter__head">
+          <h2 class="chapter__title">/research.</h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Nome progetto — research">
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:10%; --y:20%; --w:25%; --r:1.3"><img src="img/nome-progetto/research-1-1.jpg" alt="" draggable="false"></figure>
+            <figure class="item" style="--x:40%; --y:30%; --w:18%; --r:0.75"><img src="img/nome-progetto/research-1-2.jpg" alt="" draggable="false"></figure>
+          </div></div>
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:30%; --y:15%; --w:30%; --r:0.75"><img src="img/nome-progetto/research-2-1.jpg" alt="" draggable="false"></figure>
+          </div></div>
+        </div>
+      </section>
+
+    </article>
+    ================================================================== -->
+
+  </main>
+
+  <script src="projects.js" defer></script>
+</body>
+</html>

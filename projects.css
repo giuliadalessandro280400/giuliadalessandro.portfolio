@@ -526,3 +526,18 @@ body.page-projects { background: #fff; }
 /* Pagine "peek" (i capi della ricerca): più strette, così ai lati si vede un pezzo della precedente e della successiva */
 .page--peek { --peek-w: min(var(--sheet-w), 78vw); flex: 0 0 var(--peek-w); }
 .page--peek .sheet { width: var(--peek-w); }
+
+/* Titoli di gruppo del menu (Master's degree / Thesis / Bachelor) tutti uguali, anche se sono link */
+.side-menu__group a,
+.side-menu__group a.is-current {
+  display: inline;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  font-style: normal;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+.side-menu__group a::before,
+.side-menu__group a.is-current::before { content: none; }
+.side-menu__group a:hover { text-decoration: none; }

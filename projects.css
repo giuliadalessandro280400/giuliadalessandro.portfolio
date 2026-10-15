@@ -522,3 +522,7 @@ body.page-projects { background: #fff; }
 .vtxt .q { display: inline-block; height: 0; overflow: visible; position: relative; }
 .vtxt .ql { left: -.55em; }
 .vtxt .qr { left: .4em; }
+
+/* Pagine "peek" (i capi della ricerca): più strette, così ai lati si vede un pezzo della precedente e della successiva */
+.page--peek { --peek-w: min(var(--sheet-w), 78vw); flex: 0 0 var(--peek-w); }
+.page--peek .sheet { width: var(--peek-w); }

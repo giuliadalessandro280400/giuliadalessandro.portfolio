@@ -50,8 +50,9 @@
     <nav aria-label="Navigazione principale">
       <a href="index.html">/about.</a>
       <a href="projects.html" aria-current="page">/projects.</a>
-      <a href="weightlifting.html">/weightlifting.</a>
-      <a href="illustration.html">/illustration.</a>
+      <!-- nascosto per ora (da completare): togli i commenti per riattivarlo -->
+      <!-- <a href="weightlifting.html">/weightlifting.</a> -->
+      <!-- <a href="illustration.html">/illustration.</a> -->
       <a href="strategy.html">/strategy.</a>
     </nav>
   </header>
@@ -60,8 +61,8 @@
   <div class="tabs-bar" aria-hidden="true">
     <span class="tab tab--1"></span>
     <span class="tab tab--2"></span>
-    <span class="tab tab--3"></span>
-    <span class="tab tab--4"></span>
+    <!-- <span class="tab tab--3"></span> -->
+    <!-- <span class="tab tab--4"></span> -->
     <span class="tab tab--5"></span>
   </div>
 
@@ -714,14 +715,513 @@
     </article>
 
     <!-- ================== USATE DOLCEZZA MIEI PRODI ================== -->
-    <article class="project" id="usate-dolcezza">
-      <section class="cover cover--soon" aria-label="Usate dolcezza miei prodi — copertina">
+    <!-- Come Orchestra: copertina, poi una sezione per volta (research → design → shooting).
+         La sezione development si aggiunge copiando un blocco <section class="chapter"> qui sotto
+         (cambia id, titolo e aria-label) e incollando le pagine <div class="page"> dentro. -->
+    <article class="project project--wide" id="usate-dolcezza">
+
+      <!-- ---------- Copertina (foto con la scritta a matita) ---------- -->
+      <section class="cover cover--photo" aria-label="Usate dolcezza miei prodi — copertina">
         <div class="sheet">
-          <span class="cover__line" aria-hidden="true"></span>
-          <div class="cover__main">
-            <h1 class="cover__title cover__title--long">Usate dolcezza miei prodi</h1>
-            <p class="cover__kind">Exercise gentleness my brave ones</p>
-          </div>
+          <figure class="item" style="--x:27.9%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-01.jpg" alt="Usate dolcezza miei prodi" draggable="false" loading="lazy"></figure>
+        </div>
+      </section>
+
+      <!-- Vecchia pagina titolo (scritta a matita su bianco), nascosta: per riattivarla togli i segni di commento
+          <div class="page" data-section=""><div class="sheet">
+            <figure class="item" style="--x:22.34%; --y:17.0%; --w:55.31%; --r:1.422"><img src="img/tesi/tesi-r-01-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:22.34%; --y:17.0%; --w:55.31%; --r:1.422"><img src="img/tesi/tesi-r-01-2.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+      -->
+
+      <!-- ---------- research ---------- -->
+      <section class="chapter" id="usate-dolcezza-research">
+        <header class="chapter__head">
+          <h2 class="chapter__title">/research.</h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Usate dolcezza miei prodi — research (fino ai capi)">
+
+          <!-- Pagina 3 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:48.59%; --y:0.0%; --w:51.41%; --r:0.823"><img src="img/tesi/tesi-r-03-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:33.77%; --y:41.93%; --w:14.77%; --r:1.507"><img src="img/tesi/tesi-r-03-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:27.06%; --y:24.25%; --w:13.45%; --r:1.333"><img src="img/tesi/tesi-r-03-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif" style="--x:2.81%; --y:42.08%; --fs:1.013; --lh:1.20">“PORTRAIT, 1990 – I wanted the model to look as if she had just<br>stepped out of a portrait. I put her on a pedestal, perched on two diz-<br>zying platforms. Every fabric had to be an epitome, from lace to velvet,<br>to tartan and rustic tweeds: the whole gamut, to then finish on canvas,<br>because François Boucher’s The Sleeping Shepherdess was featured on<br>the ‘Statue of Liberty’ and the stretch velvet was adorned with motifs<br>taken from furniture in the Wallace Collection. The ‘Portrait’ hat from<br>the collection was a high felt crown with a narrow brim, suited to any<br>garment since the beginnings of oil painting.”</p>
+            <p class="txt txt--serif" style="--x:2.81%; --y:62.33%; --fs:1.013; --lh:1.20">Vivienne Westwood about SS90 PORTRAIT, Fury, A. (2021). Vivienne<br>Westwood: Catwalk - The Complete Collections. Thames &amp; Hudson.</p>
+          </div></div>
+
+          <!-- Pagina 4 -->
+          <div class="page"><div class="sheet">
+            <i class="sw" style="--x:0%; --y:40.2%; --w:23.7%; --h:18.8%; --c:#040304"></i>
+            <i class="sw" style="--x:2.8%; --y:91.4%; --w:13.0%; --h:3.4%; --c:#8a2022"></i>
+            <i class="sw" style="--x:15.8%; --y:91.4%; --w:12.0%; --h:3.4%; --c:#796157"></i>
+            <i class="sw" style="--x:27.8%; --y:91.4%; --w:4.8%; --h:3.4%; --c:#966f4a"></i>
+            <i class="sw" style="--x:32.6%; --y:91.4%; --w:3.0%; --h:3.4%; --c:#ceBe8e"></i>
+            <i class="sw" style="--x:35.6%; --y:91.4%; --w:19.0%; --h:3.4%; --c:#ffffff"></i>
+            <i class="sw" style="--x:54.6%; --y:91.4%; --w:8.6%; --h:3.4%; --c:#b3bdb9"></i>
+            <i class="sw" style="--x:63.2%; --y:91.4%; --w:21.2%; --h:3.4%; --c:#707169"></i>
+            <i class="sw" style="--x:82.8%; --y:91.4%; --w:14.2%; --h:3.4%; --c:#0a0b0b"></i>
+            <figure class="item" style="--x:5.59%; --y:42.23%; --w:14.51%; --r:1.651"><img src="img/tesi/tesi-r-04-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:51.41%; --y:27.88%; --w:10.74%; --r:0.751"><img src="img/tesi/tesi-r-04-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:43.11%; --y:51.81%; --w:12.36%; --r:0.678"><img src="img/tesi/tesi-r-04-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:44.69%; --y:4.5%; --w:14.83%; --r:1.066"><img src="img/tesi/tesi-r-04-4.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif" style="--x:63.67%; --y:28.01%; --fs:0.938; --lh:1.20">“Since the dialectic between what’s said and what’s seen is irony’s native land, the most<br>classic television irony functions via the juxtaposition of audio and video that don’t ma-<br>tch. What’s seen disproves what’s said. A scholarly article on network news describes a<br>famous interview with a corporate guy from United Fruit on a CBS special about Guate-<br>mala: “I sure don’t know of anybody being so-called ‘oppressed,’” this guy, in a ‘70s leisure<br>suit and bad comb-over, tells Ed Rabel. “I think this is just something that some reporters<br>have thought up.” The whole interview is intercut with commentless footage of big-bellied<br>kids in Guatemalan slums and union leaders lying with their throats cut in the mud.”</p>
+            <p class="txt txt--serif" style="--x:63.67%; --y:53.51%; --fs:0.938; --lh:1.20">Wallace, D. F. (1993). E unibus pluram: Television and U.S. fiction. Review of Contempo-<br>rary Fiction, 13(2), 151–194.</p>
+          </div></div>
+
+          <!-- Pagina 5 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:45.32%; --y:18.6%; --w:29.05%; --r:1.061"><img src="img/tesi/tesi-r-05-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:76.03%; --y:36.1%; --w:20.05%; --r:0.955"><img src="img/tesi/tesi-r-05-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif" style="--x:4.02%; --y:42.67%; --fs:1.641; --lh:1.20">“In the collection of the Musée Historique des Tissus in<br>Lyons, Westwood examined a rare surviving specimen of a<br>pourpoint – a fourteenth-century quilted doublet designed<br>to be worn under plate armour, its front padded to fill out a<br>convex breastplate and with a large grande assiette armho-<br>le that allowed 360-degree arm movement. These archaic<br>details – specifically the sleeve construction – were transla-<br>ted by Westwood into strikingly futuristic cuts that she and<br>Kronthaler continue to use to this day.”</p>
+            <p class="txt txt--serif" style="--x:4.02%; --y:75.48%; --fs:1.641; --lh:1.20">Fury, A. (2021). Vivienne Westwood: Catwalk - The Comple-<br>te Collections. Thames &amp; Hudson.</p>
+          </div></div>
+
+          <!-- Pagina 6 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:60.99%; --y:54.27%; --w:11.28%; --r:0.648"><img src="img/tesi/tesi-r-06-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:35.79%; --y:42.56%; --w:23.87%; --r:0.742"><img src="img/tesi/tesi-r-06-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:35.79%; --y:23.69%; --w:11.46%; --r:1.061"><img src="img/tesi/tesi-r-06-3.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif" style="--x:5.30%; --y:5.95%; --fs:1.300; --lh:1.20">“The next real literary “rebels” in this country might well</p>
+            <p class="txt txt--serif" style="--x:5.30%; --y:8.36%; --fs:1.200; --lh:1.20">emerge as some weird bunch of anti-rebels, born oglers who<br>dare somehow to back away from ironic watching, who have<br>the childish gall actually to endorse and instantiate sin-<br>gle-pleated values. Who treat of plain old untrendy human<br>troubles and emotions in U.S. life with reverence and convi-<br>ction. Who eschew self-consciousness and hip fatigue. These<br>anti-rebels would be outdated, of course, before they even<br>started. Dead on the page. Too sincere. Clearly repressed.<br>Backward, quaint, naive, anachronistic. Maybe that’ll be the<br>point. Maybe that’s why they’ll be the next real rebels. Real<br>rebels, as far as I can see, risk disapproval. The old post-<br>modern insurgents risked the gasp and the squeal: shock,<br>disgust, outrage, censorship, accusations of socialism, anar-<br>chism, nihilism. Today’s risks are different. The new rebels<br>might be artists willing to risk the yawn, the rolled eye, the<br>cool smile, the nudged rib, the parody of gifted ironists, the<br>“Oh, how banal.” To risk accusations of sentimentality, me-<br>lodrama. Of overcredulity. Of softness. Of willingness to be<br>fooled by a world of dedicated looking-handlers who count<br>on art’s ironic distance from mediocre reality to make the<br>whole mess feel tolerable.”</p>
+            <p class="txt txt--serif" style="--x:73.60%; --y:54.44%; --fs:1.200; --lh:1.20">«THESE SHOULDERS ARE A RESPONSE<br>TO FEAR AND ANXIETY; DEFIANCE IN<br>THE FACE OF THREAT.»</p>
+            <p class="txt txt--serif" style="--x:5.30%; --y:61.46%; --fs:1.200; --lh:1.15">Wallace, D. F. (1993). E unibus pluram: Television and U.S.<br>fiction. Review of Contemporary Fiction, 13(2), 151–194.</p>
+            <p class="txt txt--serif" style="--x:73.60%; --y:63.66%; --fs:1.200; --lh:1.20">Rick Owens about SS21 “Gethsemane”</p>
+          </div></div>
+
+          <!-- Pagina 7 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:15.55%; --w:43.33%; --r:1.0"><img src="img/tesi/tesi-r-07-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:56.67%; --y:15.61%; --w:43.33%; --r:1.0"><img src="img/tesi/tesi-r-07-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:41.40%; --y:18.68%; --fs:1.300; --p:1.560">COMMES DES GARÇONS <b>BLAZER</b></p>
+            <p class="txt txt--serif vtxt" style="--x:54.85%; --y:4.82%; --fs:1.083; --p:1.300"><i>Spring/Summer 2016 </i><b><i><span class="q ql">“</span>ARMOR OF PEACE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 8 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.31%; --y:19.68%; --w:46.88%; --r:1.432"><img src="img/tesi/tesi-r-08-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.81%; --y:19.68%; --w:46.87%; --r:1.432"><img src="img/tesi/tesi-r-08-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif" style="--x:14.41%; --y:74.04%; --fs:1.406; --lh:1.20">details: <b>OPEN ARMPIT SEAM</b></p>
+            <p class="txt txt--serif" style="--x:67.06%; --y:74.04%; --fs:1.406; --lh:1.20">details: <b>OPEN ELBOW SEAM</b></p>
+          </div></div>
+
+          <!-- Pagina 9 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:4.53%; --y:0.0%; --w:41.65%; --r:0.666"><img src="img/tesi/tesi-r-09-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.8%; --y:19.03%; --w:39.66%; --r:1.04"><img src="img/tesi/tesi-r-09-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:22.68%; --y:3.34%; --fs:1.336; --p:1.604">COMMES DES GARÇONS <b>HOMME</b></p>
+            <p class="txt txt--serif vtxt" style="--x:53.93%; --y:2.40%; --fs:1.114; --p:1.336"><i>Spring/Summer 2016 </i><b><i><span class="q ql">“</span>ARMOR OF PEACE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 10 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:1.21%; --y:8.98%; --w:40.2%; --r:0.831"><img src="img/tesi/tesi-r-10-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:63.74%; --y:12.0%; --w:36.15%; --r:0.748"><img src="img/tesi/tesi-r-10-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:43.31%; --y:6.29%; --fs:1.283; --p:1.539">COMMES DES GARÇONS <b>HOMME</b></p>
+            <p class="txt txt--serif vtxt" style="--x:56.25%; --y:5.41%; --fs:1.069; --p:1.283"><i>Spring/Summer 2016 </i><b><i><span class="q ql">“</span>ARMOR OF PEACE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 11 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:1.85%; --w:41.76%; --r:0.706"><img src="img/tesi/tesi-r-11-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.46%; --y:3.15%; --w:44.54%; --r:0.75"><img src="img/tesi/tesi-r-11-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:42.03%; --y:13.38%; --fs:1.172; --p:1.407">COMMES DES GARÇONS <b>HOMME</b></p>
+            <p class="txt txt--serif vtxt" style="--x:53.86%; --y:12.58%; --fs:0.977; --p:1.172"><i>Spring/Summer 2016 </i><b><i><span class="q ql">“</span>ARMOR OF PEACE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 12 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:65.62%; --y:22.01%; --w:34.38%; --r:0.986"><img src="img/tesi/tesi-r-12-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:22.01%; --w:36.29%; --r:1.041"><img src="img/tesi/tesi-r-12-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:43.72%; --y:20.39%; --fs:1.306; --p:1.567">PHENOMENON <b>BLAZER SAMPLE</b></p>
+            <p class="txt txt--serif vtxt" style="--x:56.89%; --y:8.31%; --fs:1.088; --p:1.306"><i>Fall/winter 2010 </i><b><i><span class="q ql">“</span>KNIGHT ARMOR<span class="q qr">”</span> </i></b><i>collection</i></p>
+            <i class="sw" style="--x:59.0%; --y:14.3%; --w:12.4%; --h:14.0%; --c:#fff"></i>
+            <i class="sw" style="--x:96.2%; --y:13.4%; --w:3.8%; --h:14.0%; --c:#fff"></i>
+          </div></div>
+
+          <!-- Pagina 13 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:2.72%; --y:17.52%; --w:33.94%; --r:0.866"><img src="img/tesi/tesi-r-13-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:63.73%; --y:11.8%; --w:36.27%; --r:0.795"><img src="img/tesi/tesi-r-13-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:44.84%; --y:7.57%; --fs:1.273; --p:1.528">20471120 <b><span class="q ql">“</span>DEFORMED CRESCENT<span class="q qr">”</span> BLAZER</b></p>
+            <p class="txt txt--serif vtxt" style="--x:57.69%; --y:11.11%; --fs:1.061; --p:1.273"><i>Spring/Summer 1997 </i><b><i><span class="q ql">“</span>TWINS<span class="q qr">”</span> </i></b><i>collection</i></p>
+            <i class="sw" style="--x:0%; --y:10.4%; --w:5.3%; --h:13.1%; --c:#fff"></i>
+          </div></div>
+
+          <!-- Pagina 14 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:9.02%; --w:45.4%; --r:0.886"><img src="img/tesi/tesi-r-14-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.65%; --y:9.19%; --w:44.35%; --r:0.868"><img src="img/tesi/tesi-r-14-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:43.50%; --y:16.95%; --fs:1.276; --p:1.531">YUN TAKAHASHI<span class="q qr">’</span>S <b><span class="q ql">“</span>FENCING JACKET<span class="q qr">”</span></b></p>
+            <p class="txt txt--serif vtxt" style="--x:56.37%; --y:16.95%; --fs:1.063; --p:1.276"><i>Spring/Summer 2017</i></p>
+          </div></div>
+
+          <!-- Pagina 15 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:21.49%; --w:48.08%; --r:1.314"><img src="img/tesi/tesi-r-15-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:46.06%; --y:19.97%; --w:53.94%; --r:1.5"><img src="img/tesi/tesi-r-15-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 16 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:34.25%; --y:31.62%; --w:20.45%; --r:0.702"><img src="img/tesi/tesi-r-16-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:15.74%; --w:32.11%; --r:0.75"><img src="img/tesi/tesi-r-16-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.35%; --y:15.83%; --w:20.83%; --r:1.0"><img src="img/tesi/tesi-r-16-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:79.17%; --y:15.83%; --w:20.83%; --r:1.0"><img src="img/tesi/tesi-r-16-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:59.4%; --y:47.08%; --w:18.13%; --r:0.931"><img src="img/tesi/tesi-r-16-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:78.72%; --y:47.08%; --w:20.95%; --r:1.0"><img src="img/tesi/tesi-r-16-6.png" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 17 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:18.73%; --w:39.4%; --r:1.145"><img src="img/tesi/tesi-r-17-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:60.6%; --y:19.71%; --w:39.4%; --r:1.166"><img src="img/tesi/tesi-r-17-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif" style="--x:69.14%; --y:75.81%; --fs:1.222; --lh:1.20">CORSET WITH DETACHABLE SLEEVES,</p>
+            <p class="txt txt--serif" style="--x:74.24%; --y:78.16%; --fs:1.222; --lh:1.20">from the same collection</p>
+          </div></div>
+
+          <!-- Pagina 18 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:1.7%; --w:42.32%; --r:0.71"><img src="img/tesi/tesi-r-18-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.29%; --y:2.94%; --w:44.71%; --r:0.75"><img src="img/tesi/tesi-r-18-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:42.82%; --y:13.69%; --fs:1.032; --p:1.238">COMMES DES GARÇONS <b>SHOULDER PIECE</b></p>
+            <p class="txt txt--serif vtxt" style="--x:53.54%; --y:11.63%; --fs:0.860; --p:1.032"><i>Spring/Summer 2016 </i><b><i><span class="q ql">“</span>ARMOR OF PEACE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 19 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:69.3%; --y:5.64%; --w:30.7%; --r:0.566"><img src="img/tesi/tesi-r-19-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:12.04%; --w:33.58%; --r:0.727"><img src="img/tesi/tesi-r-19-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:43.71%; --y:18.66%; --fs:1.406; --p:1.688">RICK <b>OWENS MOTO JACKET</b></p>
+            <p class="txt txt--serif vtxt" style="--x:58.33%; --y:1.00%; --fs:1.172; --p:1.406"><i>Spring/Summer 2009 </i><b><i><span class="q ql">“</span>STRUTTER<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 20 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:63.75%; --y:19.03%; --w:36.25%; --r:0.92"><img src="img/tesi/tesi-r-20-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:18.09%; --w:34.95%; --r:0.874"><img src="img/tesi/tesi-r-20-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:41.52%; --y:21.38%; --fs:1.298; --p:1.558">RICK <b>OWENS MOTO JACKET</b></p>
+            <p class="txt txt--serif vtxt" style="--x:55.01%; --y:5.07%; --fs:1.082; --p:1.298"><i>Spring/Summer 2009 </i><b><i><span class="q ql">“</span>STRUTTER<span class="q qr">”</span> </i></b><i>collection</i></p>
+            <p class="txt txt--serif" style="--x:68.44%; --y:84.25%; --fs:1.298; --lh:1.20">Details: <b>scooped armpits with elastic undersleeve</b></p>
+          </div></div>
+
+          <!-- Pagina 21 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:58.87%; --y:17.53%; --w:41.13%; --r:1.0"><img src="img/tesi/tesi-r-21-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:16.9%; --w:40.47%; --r:0.927"><img src="img/tesi/tesi-r-21-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:44.72%; --y:11.10%; --fs:1.226; --p:1.471">VIVIENNE WESTWOOD<span class="q qr">’</span>S <b>CORSET VEST</b></p>
+            <p class="txt txt--serif vtxt" style="--x:52.23%; --y:8.45%; --fs:1.021; --p:1.226"><i>Spring/Summer 1993 </i><b><i><span class="q ql">“</span>CAFE SOCIETY<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 22 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:0.0%; --w:37.26%; --r:0.596"><img src="img/tesi/tesi-r-22-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:3.33%; --w:37.24%; --r:0.638"><img src="img/tesi/tesi-r-22-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:64.21%; --y:3.33%; --w:35.79%; --r:0.613"><img src="img/tesi/tesi-r-22-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:42.11%; --y:11.93%; --fs:1.364; --p:1.637">RICK OWENS <b><span class="q ql">“</span>HOODED BUBBLE<span class="q qr">”</span> COAT</b></p>
+            <p class="txt txt--serif vtxt" style="--x:56.29%; --y:12.76%; --fs:1.137; --p:1.364"><i>Spring/Summer 2023 </i><b><i><span class="q ql">“</span>EDFU<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 23 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:1.87%; --w:44.01%; --r:0.731"><img src="img/tesi/tesi-r-23-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:56.18%; --y:5.45%; --w:43.82%; --r:0.789"><img src="img/tesi/tesi-r-23-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:44.49%; --y:21.90%; --fs:1.008; --p:1.210">COMMES DES GARÇONS <b>SWEATSHIRT</b></p>
+            <p class="txt txt--serif vtxt" style="--x:54.77%; --y:15.46%; --fs:0.840; --p:1.008"><i>Spring/Summer 2016 </i><b><i><span class="q ql">“</span>ARMOR OF PEACE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 24 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:12.3%; --w:44.83%; --r:1.0"><img src="img/tesi/tesi-r-24-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.17%; --y:12.3%; --w:44.83%; --r:1.0"><img src="img/tesi/tesi-r-24-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:44.01%; --y:18.60%; --fs:1.107; --p:1.328">COMMES DES GARÇONS <b>SWEATSHIRT</b></p>
+            <p class="txt txt--serif vtxt" style="--x:55.29%; --y:11.53%; --fs:0.922; --p:1.107"><i>Spring/Summer 2016 </i><b><i><span class="q ql">“</span>ARMOR OF PEACE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 25 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:11.22%; --w:39.02%; --r:0.75"><img src="img/tesi/tesi-r-25-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:60.42%; --y:4.55%; --w:39.58%; --r:0.719"><img src="img/tesi/tesi-r-25-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:42.86%; --y:18.00%; --fs:1.213; --p:1.456">COMMES DES GARÇONS <b>SWEATSHIRT</b></p>
+            <p class="txt txt--serif vtxt" style="--x:55.23%; --y:10.26%; --fs:1.011; --p:1.213"><i>Spring/Summer 2016 </i><b><i><span class="q ql">“</span>ARMOR OF PEACE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 26 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:14.97%; --w:44.23%; --r:1.0"><img src="img/tesi/tesi-r-26-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.82%; --y:19.15%; --w:41.18%; --r:1.056"><img src="img/tesi/tesi-r-26-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:47.01%; --y:14.97%; --fs:1.145; --p:1.374">VIVIENNE WESTWOOD <b><span class="q ql">“</span>DIY SWEATSHIRT<span class="q qr">”</span></b></p>
+            <p class="txt txt--serif vtxt" style="--x:53.98%; --y:11.19%; --fs:0.954; --p:1.145"><i>Autumn/Winter 1993 </i><b><i><span class="q ql">“</span>ANGLOMANIA<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 27 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:8.37%; --w:39.04%; --r:0.75"><img src="img/tesi/tesi-r-27-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.86%; --y:8.37%; --w:44.14%; --r:0.848"><img src="img/tesi/tesi-r-27-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:40.58%; --y:29.88%; --fs:1.217; --p:1.460">RICK OWENS LILIES</p>
+            <p class="txt txt--serif vtxt" style="--x:53.23%; --y:36.73%; --fs:1.217; --p:1.460"><b>DRAPED DRESS</b></p>
+          </div></div>
+
+          <!-- Pagina 28 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:0.0%; --w:43.27%; --r:0.692"><img src="img/tesi/tesi-r-28-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:57.52%; --y:0.0%; --w:42.48%; --r:0.68"><img src="img/tesi/tesi-r-28-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:41.99%; --y:19.73%; --fs:1.406; --p:1.688">RICK OWENS LILIES</p>
+            <p class="txt txt--serif vtxt" style="--x:56.60%; --y:27.65%; --fs:1.406; --p:1.688"><b>DRAPED DRESS</b></p>
+          </div></div>
+
+          <!-- Pagina 29 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:6.1%; --w:39.79%; --r:0.725"><img src="img/tesi/tesi-r-29-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.05%; --y:5.69%; --w:41.95%; --r:0.757"><img src="img/tesi/tesi-r-29-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:42.40%; --y:8.28%; --fs:1.173; --p:1.408">SAINT LAURENT Rive Gauche <b>SLASHED TOP</b></p>
+            <p class="txt txt--serif vtxt" style="--x:54.59%; --y:13.20%; --fs:0.978; --p:1.173"><i>Autumn/Winter 2002</i></p>
+          </div></div>
+
+          <!-- Pagina 30 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:16.27%; --w:19.97%; --r:0.474"><img src="img/tesi/tesi-r-30-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:21.79%; --y:16.27%; --w:19.97%; --r:0.474"><img src="img/tesi/tesi-r-30-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.24%; --y:16.27%; --w:19.97%; --r:0.474"><img src="img/tesi/tesi-r-30-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:80.03%; --y:16.27%; --w:19.97%; --r:0.474"><img src="img/tesi/tesi-r-30-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:43.23%; --y:18.00%; --fs:1.174; --p:1.409">VIVIENNE WESTWOOD ANGLOMANIA</p>
+            <p class="txt txt--serif vtxt" style="--x:55.59%; --y:23.19%; --fs:1.174; --p:1.409"><b><span class="q ql">“</span>DRUNKEN TAILOR<span class="q qr">”</span> CHEMISIER</b></p>
+          </div></div>
+
+          <!-- Pagina 31 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:1.41%; --y:7.06%; --w:41.46%; --r:0.772"><img src="img/tesi/tesi-r-31-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:19.89%; --w:22.69%; --r:0.603"><img src="img/tesi/tesi-r-31-2.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:56.4%; --y:8.51%; --w:43.6%; --r:0.826"><img src="img/tesi/tesi-r-31-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:76.64%; --y:19.89%; --w:23.36%; --r:0.594"><img src="img/tesi/tesi-r-31-4.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:43.42%; --y:17.26%; --fs:1.148; --p:1.377">RICK OWENS DRKSHDW <b>DENIM SKIRTS</b></p>
+            <p class="txt txt--serif vtxt" style="--x:54.79%; --y:17.45%; --fs:0.956; --p:1.148"><i>Spring/Summer 2023 </i><b><i><span class="q ql">“</span>EDFU<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 32 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:0.0%; --w:39.31%; --r:0.629"><img src="img/tesi/tesi-r-32-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:60.69%; --y:0.0%; --w:39.31%; --r:0.629"><img src="img/tesi/tesi-r-32-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:42.39%; --y:6.95%; --fs:1.406; --p:1.688">RICK OWENS DRKSHDW <b><span class="q ql">“</span>PILLAR SKIRT<span class="q qr">”</span></b></p>
+            <p class="txt txt--serif vtxt" style="--x:56.32%; --y:7.18%; --fs:1.172; --p:1.406"><i>Spring/Summer 2023 </i><b><i><span class="q ql">“</span>EDFU<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 33 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:11.25%; --w:46.52%; --r:1.0"><img src="img/tesi/tesi-r-33-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:53.73%; --y:11.25%; --w:46.27%; --r:1.0"><img src="img/tesi/tesi-r-33-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:46.29%; --y:19.18%; --fs:1.081; --p:1.297">VIVIENNE WESTWOOD<span class="q qr">’</span>S <b>DRAPED MINI</b></p>
+            <p class="txt txt--serif vtxt" style="--x:52.87%; --y:14.71%; --fs:0.900; --p:1.081"><i>Autumn/Winter 1993 </i><b><i><span class="q ql">“</span>ANGLOMANIA<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 34 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:23.31%; --y:32.68%; --w:16.22%; --r:0.749"><img src="img/tesi/tesi-r-34-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:9.64%; --w:23.31%; --r:0.462"><img src="img/tesi/tesi-r-34-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:68.7%; --y:9.64%; --w:31.3%; --r:0.62"><img src="img/tesi/tesi-r-34-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:59.09%; --y:32.68%; --w:16.22%; --r:0.749"><img src="img/tesi/tesi-r-34-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:42.99%; --y:14.70%; --fs:1.097; --p:1.316">RICK OWENS <b><span class="q ql">“</span>DRAPED<span class="q qr">”</span> SKIRT &amp; MINI</b></p>
+            <p class="txt txt--serif vtxt" style="--x:53.91%; --y:13.68%; --fs:0.914; --p:1.097"><i>Spring/Summer 2024 </i><b><i><span class="q ql">“</span>PORTERVILLE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 35 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:21.59%; --y:25.33%; --w:24.81%; --r:0.91"><img src="img/tesi/tesi-r-35-1.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:0.0%; --y:25.33%; --w:23.43%; --r:0.754"><img src="img/tesi/tesi-r-35-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:72.32%; --y:25.33%; --w:27.68%; --r:0.977"><img src="img/tesi/tesi-r-35-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:46.96%; --y:16.80%; --fs:1.151; --p:1.381">COMMES DES GARÇONS <b>WOOL SHORTS</b></p>
+            <p class="txt txt--serif vtxt" style="--x:58.88%; --y:10.00%; --fs:0.959; --p:1.151"><i>Spring/Summer 2016 </i><b><i><span class="q ql">“</span>ARMOR OF PEACE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 36 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:0.0%; --w:40.05%; --r:0.641"><img src="img/tesi/tesi-r-36-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:58.55%; --y:0.0%; --w:41.45%; --r:0.663"><img src="img/tesi/tesi-r-36-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:41.37%; --y:2.95%; --fs:1.406; --p:1.688">RICK OWENS DRKSHDW <b><span class="q ql">“</span>PRISONER<span class="q qr">”</span> SAROUEL</b></p>
+            <p class="txt txt--serif vtxt" style="--x:55.94%; --y:2.95%; --fs:1.172; --p:1.406"><i>Fall/Winter 2021 </i><b><i><span class="q ql">“</span>GETHSEMANE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 37 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:1.44%; --w:34.16%; --r:0.563"><img src="img/tesi/tesi-r-37-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:65.84%; --y:1.44%; --w:34.16%; --r:0.563"><img src="img/tesi/tesi-r-37-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:43.19%; --y:5.08%; --fs:1.305; --p:1.566">COMMES DES GARÇONS <b>ARMOR DRESS PANTS</b></p>
+            <p class="txt txt--serif vtxt" style="--x:56.73%; --y:5.87%; --fs:1.087; --p:1.305"><i>Fall/Winter 2016 </i><b><i><span class="q ql">“</span>ARMOR OF PEACE<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 38 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:7.91%; --w:42.74%; --r:0.812"><img src="img/tesi/tesi-r-38-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:61.26%; --y:7.91%; --w:38.74%; --r:0.75"><img src="img/tesi/tesi-r-38-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif vtxt" style="--x:43.32%; --y:13.11%; --fs:1.208; --p:1.449">RICK OWENS <b>BANANA CUT JEANS</b></p>
+            <p class="txt txt--serif vtxt" style="--x:56.13%; --y:11.82%; --fs:1.006; --p:1.208"><i>Spring/Summer 2009 </i><b><i><span class="q ql">“</span>STRUTTER<span class="q qr">”</span> </i></b><i>collection</i></p>
+          </div></div>
+
+          <!-- Pagina 39 -->
+          <div class="page page--peek"><div class="sheet">
+            <figure class="item" style="--x:0.0%; --y:22.2%; --w:31.21%; --r:0.819"><img src="img/tesi/tesi-r-39-1.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:13.4%; --y:26.36%; --w:31.21%; --r:1.0"><img src="img/tesi/tesi-r-39-2.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:55.59%; --y:24.66%; --w:33.32%; --r:1.0"><img src="img/tesi/tesi-r-39-3.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:34.54%; --y:16.83%; --w:38.11%; --r:1.0"><img src="img/tesi/tesi-r-39-4.png" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:74.43%; --y:18.98%; --w:25.57%; --r:0.826"><img src="img/tesi/tesi-r-39-5.png" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif" style="--x:65.27%; --y:68.48%; --fs:1.065; --lh:1.20">VIVIENNE WESTWOOD ANGLOMANIA <b>PLEATED SKIRT</b></p>
+          </div></div>
+
+        </div>
+      </section>
+
+      <!-- ---------- design ---------- -->
+      <section class="chapter" id="usate-dolcezza-design">
+        <header class="chapter__head">
+          <h2 class="chapter__title">/design.</h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Usate dolcezza miei prodi — design">
+
+          <!-- Pagina 40 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0%; --y:0%; --w:100%; --r:1.6"><img src="img/tesi/tesi-d-40.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 41 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0%; --y:0%; --w:100%; --r:1.6"><img src="img/tesi/tesi-d-41.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 42 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0%; --y:0%; --w:100%; --r:1.6"><img src="img/tesi/tesi-d-42.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 43 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0%; --y:0%; --w:100%; --r:1.6"><img src="img/tesi/tesi-d-43.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 44 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0%; --y:0%; --w:100%; --r:1.6"><img src="img/tesi/tesi-d-44.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 45 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0%; --y:0%; --w:100%; --r:1.6"><img src="img/tesi/tesi-d-45.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 46 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0%; --y:0%; --w:100%; --r:1.6"><img src="img/tesi/tesi-d-46.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 47 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0%; --y:0%; --w:100%; --r:1.6"><img src="img/tesi/tesi-d-47.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 48 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0%; --y:0%; --w:100%; --r:1.6"><img src="img/tesi/tesi-d-48.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Pagina 49 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:0%; --y:0%; --w:100%; --r:1.6"><img src="img/tesi/tesi-d-49.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+        </div>
+      </section>
+
+      <!-- ---------- Development: da aggiungere (togli i segni di commento) ----------
+      <section class="chapter" id="usate-dolcezza-development">
+        <header class="chapter__head">
+          <h2 class="chapter__title">/development.</h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Usate dolcezza miei prodi — development">
+
+          (incolla qui le pagine: div class="page" > div class="sheet" …)
+
+        </div>
+      </section>
+      -->
+
+      <!-- ---------- shooting ---------- -->
+      <section class="chapter" id="usate-dolcezza-shooting">
+        <header class="chapter__head">
+          <h2 class="chapter__title">/shooting.</h2>
+          <p class="chapter__count" aria-hidden="true"></p>
+        </header>
+        <div class="hscroll" tabindex="0" aria-label="Usate dolcezza miei prodi — shooting">
+
+          <!-- ===== shooting =====
+               Ogni pagina ha una o due foto (a sinistra x=3%, a destra x=52.8%). Per cambiare l'ordine basta spostare i blocchi <div class="page">;
+               per aggiungere una foto copia una riga <figure> e cambia il nome del file. -->
+          <!-- Shooting · pagina 1 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:3.0%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-02.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.8%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-03.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <p class="txt txt--serif" style="--x:77.58%; --y:42.69%; --fs:1.0; --lh:1.42; --c:#e0e0e0"><b>SHOOTING</b></p>
+            <p class="txt txt--serif" style="--x:77.58%; --y:46.5%; --fs:1.0; --lh:1.42; --c:#e0e0e0"><b>Fotografia:</b> Lucrezia Mannino<br><b>Styling:</b> Gaia Lischetti<br><b>Modelle:</b> Maddalena Secco,<br>Maria Vittoria Nascimbeni</p>
+          </div></div>
+
+          <!-- Shooting · pagina 2 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:3.0%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-04.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.8%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-05.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Shooting · pagina 3 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:3.0%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-06.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.8%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-07.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Shooting · pagina 4 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:3.0%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-08.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.8%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-09.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Shooting · pagina 5 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:3.0%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-10.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.8%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-11.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Shooting · pagina 6 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:3.0%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-12.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.8%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-13.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Shooting · pagina 7 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:27.9%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-14.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Shooting · pagina 8 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:3.0%; --y:10.5%; --w:94%; --r:1.925"><img src="img/tesi/shoot-15.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Shooting · pagina 9 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:3.0%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-16.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.8%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-17.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Shooting · pagina 10 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:3.0%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-18.jpg" alt="" draggable="false" loading="lazy"></figure>
+            <figure class="item" style="--x:52.8%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-19.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
+          <!-- Shooting · pagina 11 -->
+          <div class="page"><div class="sheet">
+            <figure class="item" style="--x:27.9%; --y:0%; --w:44.2%; --r:0.707"><img src="img/tesi/shoot-20.jpg" alt="" draggable="false" loading="lazy"></figure>
+          </div></div>
+
         </div>
       </section>
     </article>

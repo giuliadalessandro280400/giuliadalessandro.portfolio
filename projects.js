@@ -81,6 +81,15 @@
     if (!scroller) return;
     const pages = Array.from(scroller.querySelectorAll('.page'));
     const counter = chapter.querySelector('.chapter__count');
+    const titleEl = chapter.querySelector('.chapter__title');
+    // se le pagine hanno data-section, il titolo in alto cambia con la pagina (es. Window)
+    const sections = pages.some((p) => p.hasAttribute('data-section'));
+    const setTitle = (i) => {
+      if (!sections || !titleEl) return;
+      const sec = pages[i].dataset.section || '';
+      titleEl.textContent = sec ? '/' + sec + '.' : '';
+    };
+    setTitle(0);
     if (counter) counter.textContent = pad(1) + ' / ' + pad(pages.length);
     if (pages.length < 2) return;
 
@@ -121,6 +130,7 @@
       prev.disabled = index === 0;
       next.disabled = index === pages.length - 1;
       if (counter) counter.textContent = pad(index + 1) + ' / ' + pad(pages.length);
+      setTitle(index);
     };
 
     prev.addEventListener('click', () => go(index - 1));
@@ -152,4 +162,29 @@
       }
     });
   });
+})();
+
+/* Etichette verticali (.vtxt): ogni lettera deve stare a distanza --p (in cqw).
+   Il passo reale dipende dal font, quindi lo misuriamo e regoliamo la spaziatura lettere. */
+(() => {
+  const fit = () => {
+    document.querySelectorAll('.vtxt[style*="--p"]').forEach((el) => {
+      const sheet = el.closest('.sheet');
+      const p = parseFloat(el.style.getPropertyValue('--p'));
+      if (!sheet || !p || !el.textContent.length) return;
+      el.style.setProperty('--ls', '0cqw');
+      const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      const n = w.nextNode();
+      if (!n) return;
+      const r = document.createRange();
+      r.setStart(n, 0); r.setEnd(n, 1);
+      const h = r.getBoundingClientRect().height;
+      const cq = sheet.getBoundingClientRect().width / 100;
+      if (!h || !cq) return;
+      el.style.setProperty('--ls', ((p * cq - h) / cq).toFixed(3) + 'cqw');
+    });
+  };
+  const run = () => requestAnimationFrame(fit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(run); else window.addEventListener('load', run);
+  window.addEventListener('load', run);
 })();

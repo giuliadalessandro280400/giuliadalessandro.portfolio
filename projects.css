@@ -507,3 +507,18 @@ body.page-projects { background: #fff; }
   .hscroll { scroll-behavior: auto; }
   .side-menu, .tabs-bar, .site-header { transition: none; }
 }
+
+/* ---------- Tesi: testi in serif e etichette verticali ---------- */
+.txt--serif { font-family: var(--serif); }
+.vtxt {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  white-space: pre;
+  line-height: 1;
+}
+.sw { position: absolute; left: var(--x); top: var(--y); width: var(--w); height: var(--h); background: var(--c); }
+.vtxt { letter-spacing: var(--ls, 0); }
+.vtxt .tc { text-combine-upright: all; }
+.vtxt .q { display: inline-block; height: 0; overflow: visible; position: relative; }
+.vtxt .ql { left: -.55em; }
+.vtxt .qr { left: .4em; }
